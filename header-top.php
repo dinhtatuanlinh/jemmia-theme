@@ -1,7 +1,32 @@
 <div id="mobile-menu">
         <div class="close" onclick='closemenu()'><i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <ul>
+                    <?php
+                        if(has_nav_menu('Main-Menu')){
+                            $args = array(
+                                'menu'                 => '',
+                                'container'            => '',
+                                'container_class'      => '',
+                                'container_id'         => '',
+                                'container_aria_label' => '',
+                                'menu_class'           => '',
+                                'menu_id'              => '',
+                                'echo'                 => true,
+                                'fallback_cb'          => 'wp_page_menu',
+                                'before'               => '',
+                                'after'                => '',
+                                'link_before'          => '',
+                                'link_after'           => '',
+                                'items_wrap'           => '<ul>%3$s</ul>',//%3$s tương ứng với giá trị trong cặp thẻ li đưa vào
+                                'item_spacing'         => 'preserve',
+                                'depth'                => 3,// cho phép menu hiện 2 cấp nếu bằng 0 thì hiện tất cả các cấp bằng 1 thì chỉ hiện menu cha
+                                'walker'               => '',
+                                'theme_location'       => 'Main-Menu',
+                            );
+                            wp_nav_menu( $args );
+                        }
+                    ?>
+        <!-- <ul>
             <li><a href="">Trang chủ</a></li>
             <li>
                 <a href="">jemmia diamond</a>
@@ -89,13 +114,13 @@
                     <li><a href="">nhẫn cưới moissanite</a></li>
                 </ul>
             </li>
-        </ul>
+        </ul> -->
     </div>
     <div id="upper" name="upper">
         <div class="wrapper">
             <div class="opentime icon"><img src="<?php echo JEMMIA_THEME_URL_ICON; ?>/clock.png" alt=""><label>08:00 - 17:00</label></div>
             <div class="phone icon"><img src="<?php echo JEMMIA_THEME_URL_ICON; ?>/phone.png" alt=""><label><a href="tel:0775 110 111">0775 110 111</a></label></div>
-            <div class="cart icon"></div>
+
         </div>
     </div>
     <div id="top">
@@ -106,7 +131,33 @@
                 <div id="logo">
                     <a href="<?php echo get_home_url(); ?>"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/change-color-06.png" alt="jemmia"></a>
                 </div>
-                <nav class="tablet-hide mobile-hide">
+
+                <?php
+                        if(has_nav_menu('main_menu')){
+                            $args = array(
+                                'menu'                 => '',
+                                'container'            => 'nav',
+                                'container_class'      => 'tablet-hide mobile-hide',
+                                'container_id'         => '',
+                                'container_aria_label' => '',
+                                'menu_class'           => '',
+                                'menu_id'              => '',
+                                'echo'                 => true,
+                                'fallback_cb'          => 'wp_page_menu',
+                                'before'               => '',
+                                'after'                => '',
+                                'link_before'          => '',
+                                'link_after'           => '',
+                                'items_wrap'           => '<ul>%3$s<hr/></ul>',//%3$s tương ứng với giá trị trong cặp thẻ li đưa vào
+                                'item_spacing'         => 'preserve',
+                                'depth'                => 2,// cho phép menu hiện 2 cấp nếu bằng 0 thì hiện tất cả các cấp bằng 1 thì chỉ hiện menu cha
+                                'walker'               => '',
+                                'theme_location'       => 'main_menu',
+                            );
+                            wp_nav_menu( $args );
+                        }
+                    ?>
+                <!-- <nav class="tablet-hide mobile-hide">
                     <ul>
                         <li><a href="<?php echo get_home_url(); ?>">Trang chủ</a></li>
                         <li>
@@ -196,7 +247,7 @@
                             </ul>
                         </li>
                     </ul>
-                </nav>
+                </nav> -->
                 <div id="mobile-icon-menu" class="desktop-hide" onclick="openmenu()">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>

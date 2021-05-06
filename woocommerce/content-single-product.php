@@ -124,7 +124,7 @@ if ( post_password_required() ) {
                         </ul>		
                     </div>
                     <?php do_action( 'woocommerce_' . $product->get_type() . '_add_to_cart' ); ?>
-                    <div class="advice">tư vấn nhanh</div>
+                    <div class="advice"><div>tư vấn nhanh</div></div>
                     <p class="hotline">HOTLINE TƯ VẤN: <a href="tel:0775 110 111">0775 110 111</a></p>
                     <div class="prdi-footer">
                         <ul class="list-unstyled list-inline prdi-features">

@@ -185,6 +185,12 @@ body {
     margin: 0 auto;
 }
 
+#main #page .wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(250, 250, 250, 0.8);
+}
+
 #main #special .wrapper {
     display: flex;
     justify-content: space-around;
@@ -514,21 +520,96 @@ body {
 #second-main .wrapper #content .products {
     display: flex;
     flex-wrap: wrap;
-    width: 500px;
+    width: 100%;
 }
+
+
+/* #second-main .wrapper #content .products {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+} */
 
 #second-main .wrapper #content .products .cat-items .onsale {
     position: absolute;
     top: 0;
     left: 0;
-    color: #000;
+    color: rgb(255, 255, 255);
+    background-color: #ff7332;
+    padding: 5px;
+    border-radius: 0 0 5px 0;
+    font-size: 30px;
 }
 
 #second-main .wrapper #content .products .cat-items .info-products {
     position: absolute;
     left: 0;
     bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+#second-main .wrapper #content .products .cat-items .info-products:hover {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+#second-main .wrapper #content .products .cat-items .info-products:hover h2 {
+    color: #fff;
+}
+
+#second-main .wrapper #content .products .cat-items .info-products:hover .price {
+    color: #fff;
+}
+
+#second-main .wrapper #content .products .cat-items .info-products h2 {
+    margin: 10px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+}
+
+#second-main .wrapper #content .products .cat-items .info-products .price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+}
+
+#second-main .wrapper #content .products .cat-items .info-products .price ins {
+    font-size: 20px;
+}
+
+#second-main .wrapper #content .products .cat-items .info-products .star-rate {
+    display: flex;
+    justify-content: center;
+}
+
+#second-main .wrapper #content .products .cat-items .info-products .button {
+    border: 1px solid #fff;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgba(155, 155, 155, 0.7);
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+#second-main .wrapper #content .products .cat-items .info-products .added_to_cart {
+    border: 1px solid #fff;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgba(155, 155, 155, 0.7);
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: capitalize;
 }
 
 #second-main .wrapper #content #detail .maindetail {
@@ -578,6 +659,21 @@ body {
 #second-main .wrapper #content #detail .maindetail .description .price {
     font-size: 30px;
     margin: 10px 0;
+}
+
+#second-main .wrapper #content #detail .maindetail .description .price del {
+    font-size: 18px;
+}
+
+#second-main .wrapper #content #detail .maindetail .description form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#second-main .wrapper #content #detail .maindetail .description .advice {
+    display: flex;
+    justify-content: center;
 }
 
 #second-main .wrapper #content #detail .maindetail .description {
@@ -741,16 +837,52 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     font-size: 30px;
 }
 
+#cart {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+#cart i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: rgba(155, 155, 155, 0.7);
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+#cart .cart-contents-count {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-weight: 600;
+}
+
+.added {
+    display: none;
+}
+
 .advice {
-    text-transform: uppercase;
     border: 1px solid #fff;
-    margin: 10px;
+    margin: 5px auto;
     padding: 5px;
     border-radius: 20px;
-    background-color: rgba(155, 155, 155, 0.7);
+    background-color: rgba(30, 1, 161, 0.7);
     color: #fff;
     font-weight: 600;
-    display: inline-block
+    display: inline-block;
+    font-size: 15px;
+    text-transform: capitalize;
 }
 
 .product-detail-size-guide i {
@@ -834,6 +966,142 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     font-size: 13px;
     color: #90b4f7;
 }
+
+.swiper-slide .onsale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(255, 255, 255);
+    background-color: #ff7332;
+    padding: 5px;
+    border-radius: 0 0 5px 0;
+    font-size: 30px;
+}
+
+
+/* bảng giá kim cương */
+
+#bgkc-classify .bgkc-col:nth-child(1) {
+    flex: 1
+}
+
+#bgkc-classify .bgkc-col:nth-child(2) {
+    flex: 2
+}
+
+#bgkc-classify .bgkc-col:nth-child(3) {
+    flex: 1
+}
+
+.bgkc-col {
+    text-align: center;
+    height: 40px;
+    margin: 0;
+    /*             border: 1px solid #cdad6f; */
+    border: 1px solid #000;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.bgkc-col a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.bgkc-head {
+    /*             background-color: #06213c; */
+    background-color: #816003;
+    /*             color: #cdad6f; */
+    color: #fff;
+    border: 1px solid #000 !important;
+    font-size: 14px;
+    font-weight: 700
+}
+
+
+/* tab */
+
+.bgkc-tab-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1140px;
+    margin: 0 auto 20px;
+    flex-wrap: wrap;
+}
+
+.bgkc-tab {
+    width: 132px;
+    height: 40px;
+    background-color: #06213c;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 5px 5px 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #fff;
+    color: #06213c;
+    border: 1px solid #06213c;
+}
+
+
+/* tab content */
+
+.bgkc-tab-content {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.bgkc-title {
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 20px;
+    font-size: 18px;
+}
+
+.bgkc-tab-content .bgkc-col {
+    flex: 1
+}
+
+@media only screen and (min-width: 601px) {
+    .bgkc-container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    .bgkc-row {
+        display: flex;
+        justify-content: center;
+        width: 1140px;
+    }
+    .bgkc-row:hover {
+        background-color: #dedede;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bgkc-container {
+        width: 100vw;
+        margin: 0 auto;
+        overflow: scroll;
+    }
+    #bgkc-classify .bgkc-row {
+        display: flex;
+        justify-content: center;
+        width: 500px !important;
+    }
+    .bgkc-row {
+        display: flex;
+        justify-content: center;
+        width: 1140px;
+    }
+}
+
+
+/* end bảng giá kim cương */
 
 
 /* ###################################################################################################### */
@@ -993,9 +1261,8 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
         margin: 20px 20px;
     }
     #second-main .wrapper #content .products .cat-items {
-        width: 25%;
-        padding: 0 10px;
-        margin: 30px 0;
+        width: 24%;
+        margin: 10px 0.5%;
         box-sizing: border-box;
         position: relative;
     }
@@ -1137,6 +1404,15 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
         height: 500px;
         width: 50% !important;
     }
+    #second-main .wrapper #content .products .cat-items {
+        width: 48%;
+        margin: 10px 1%;
+        box-sizing: border-box;
+        position: relative;
+    }
+    #second-main .wrapper #content .products .cat-items img {
+        width: 100%;
+    }
     footer #info .wrapper {
         flex-wrap: wrap;
     }
@@ -1267,6 +1543,15 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
         overflow: hidden;
         margin: 0 20px;
         height: 500px;
+        width: 100%;
+    }
+    #second-main .wrapper #content .products .cat-items {
+        width: 98%;
+        margin: 30px 1%;
+        box-sizing: border-box;
+        position: relative;
+    }
+    #second-main .wrapper #content .products .cat-items img {
         width: 100%;
     }
     footer #info .wrapper {

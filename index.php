@@ -122,6 +122,12 @@ $upload_dir = wp_upload_dir();
                             $product = wc_get_product( get_the_ID() ); /* get the WC_Product Object */
                     ?>
                     <div class="swiper-slide">
+                        <?php
+                            if (woocommerce_show_product_loop_sale_flash()){
+                                    echo woocommerce_show_product_loop_sale_flash();
+                            }
+                            
+                        ?>
                         <div class="img">
                             <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></a>
                         </div>
@@ -198,6 +204,13 @@ $upload_dir = wp_upload_dir();
                     ?>
 
                     <div class="swiper-slide">
+                        <?php
+                            if (woocommerce_show_product_loop_sale_flash()){
+                                    echo woocommerce_show_product_loop_sale_flash();
+                            }
+                            
+                        ?>
+                        
                         <div class="img">
                             <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></a>
                         </div>
@@ -269,6 +282,12 @@ $upload_dir = wp_upload_dir();
                             $product = wc_get_product( get_the_ID() ); /* get the WC_Product Object */
                     ?>
                     <div class="swiper-slide">
+                    <?php
+                            if (woocommerce_show_product_loop_sale_flash()){
+                                    echo woocommerce_show_product_loop_sale_flash();
+                            }
+                            
+                        ?>
                         <div class="img">
                             <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></a>
                         </div>
@@ -340,6 +359,12 @@ $upload_dir = wp_upload_dir();
                             $product = wc_get_product( get_the_ID() ); /* get the WC_Product Object */
                     ?>
                     <div class="swiper-slide">
+                    <?php
+                            if (woocommerce_show_product_loop_sale_flash()){
+                                    echo woocommerce_show_product_loop_sale_flash();
+                            }
+                            
+                        ?>
                         <div class="img">
                             <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></a>
                         </div>
@@ -411,6 +436,12 @@ $upload_dir = wp_upload_dir();
                             $product = wc_get_product( get_the_ID() ); /* get the WC_Product Object */
                     ?>
                     <div class="swiper-slide">
+                    <?php
+                            if (woocommerce_show_product_loop_sale_flash()){
+                                    echo woocommerce_show_product_loop_sale_flash();
+                            }
+                            
+                        ?>
                         <div class="img">
                             <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></a>
                         </div>
@@ -482,6 +513,14 @@ $upload_dir = wp_upload_dir();
                             $product = wc_get_product( get_the_ID() ); /* get the WC_Product Object */
                     ?>
                     <div class="swiper-slide">
+                        
+                            
+                    <?php
+                            if (woocommerce_show_product_loop_sale_flash()){
+                                    echo woocommerce_show_product_loop_sale_flash();
+                            }
+                            
+                        ?>
                         <div class="img">
                             <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></a>
                         </div>
@@ -584,7 +623,7 @@ $upload_dir = wp_upload_dir();
                                         <div class="blog-title"><?php echo $blog->post_title; ?></div>
                                         <div class="date">Đăng vào: <?php echo explode(' ', $blog->post_date)[0] ; ?></div>
                                         <div class="author">Bởi: <?php the_author_meta( 'user_nicename' , $author_id ); ?> </div>
-                                        <p class="short"><?php echo get_the_excerpt($blog->ID,); ?></p>
+                                        <p class="short"><?php echo get_the_excerpt($blog->ID); ?></p>
                                     </a>
 
                                 </div>
@@ -599,8 +638,8 @@ $upload_dir = wp_upload_dir();
         </div>
     </div>
 </div>
-    <?php 
+<?php 
 
-    get_footer(); 
-    ?>
+get_footer(); 
+?>
     

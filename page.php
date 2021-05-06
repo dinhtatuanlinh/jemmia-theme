@@ -1,7 +1,6 @@
 <?php 
 get_header(); 
 get_header('top');
-get_header('banner');
 $upload_dir = wp_upload_dir();
 
 // echo '<pre style="color: #fff">';
@@ -12,9 +11,15 @@ $upload_dir = wp_upload_dir();
 
 </div>
 <div id="main">
-<?php
-        echo 'page';
-    ?>
+    <div id="page">
+        <div class="wrapper">
+        <?php
+            echo 'page';
+        ?>
+        </div>
+    </div>
+
+
 </div>
 
 <?php 

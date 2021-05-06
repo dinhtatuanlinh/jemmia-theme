@@ -143,14 +143,8 @@ $upload_dir = wp_upload_dir();
             <div class="date">Đăng vào: <?php echo get_the_date() ; ?></div>
         </div>
         <div class="main-content">
-        <?php //the_content(); ?>
-        <?php 
-            $str = get_the_content(); 
-            $find = '</h2>';
-            $pos = strpos($str, $find, 10);
-            echo $pos;
-            // echo htmlspecialchars($str);
-        ?>
+        <?php the_content(); ?>
+
         </div>
     </div>
     <?php

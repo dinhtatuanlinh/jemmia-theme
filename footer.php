@@ -10,6 +10,9 @@
                         <li>Hà Nội: 63 Kim Mã, Quận Ba Đình , Hà Nội</li>
                         <li>Đà Nẵng: 195 Nguyễn Hữu Thọ, Quận Hải Châu, TP.Đà Nẵng.</li>
                     </ul>
+                    <h3><a href="https://jemmia.vn/ecatalog-trang-suc-kim-cuong-jemmia-gemstone-jewelry"><strong>E-Catalog Jemmia</strong></a></h3>
+                    <h3><strong>Hotline: <a href="tel:0775110111">0775 110 111</a></strong></h3>
+                    <h3><strong>Hỗ trợ khiếu nại: <a href="tel:0838 353 333">0838 353 333</a></strong></h3>
                 </div>
                 <div class="col">
                     <h3>về jemmia</h3>
@@ -102,7 +105,17 @@
         <div id="up"><i class="fa fa-level-up" aria-hidden="true"></i>
         </div>
     </a>
+    <a href="<?php echo WC()->cart->get_cart_url(); ?>">
+        <div id="cart">
+            <?php // my_wc_cart_count fucntion
 
+                do_action('linh_cart_icon');
+
+            ?>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    
+        </div>
+    </a>
     <!-- Scripts -->
     <?php wp_footer(); ?>
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=750828008695156&ev=PageView&noscript=1"/></noscript>
