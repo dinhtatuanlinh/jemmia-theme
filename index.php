@@ -23,27 +23,71 @@ $upload_dir = wp_upload_dir();
         <div class="wrapper">
             <ul>
                 <li>
-                    <a href="">
-                        <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/kim-cuong-gia-1-scaled-247x296.jpg" alt="">
-                        <p>jemmia diamond</p>
+                    <?php
+                        $terms = 'nhan-nu';
+                        $category = get_term_by('slug', $terms, 'product_cat');
+
+                        $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true );
+                        $image = wp_get_attachment_url( $thumbnail_id );
+                    ?>
+                    <a href="<?php echo get_term_link( $category ); ?>">
+                        <img src="<?php echo $image; ?>" alt="">
+                        <p>Nhẫn nữ</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/kim-cuong-gia-1-scaled-247x296.jpg" alt="">
-                        <p>jemmia moissanite</p>
+                    <?php
+                        $terms = 'nhan-nam';
+                        $category = get_term_by('slug', $terms, 'product_cat');
+                        $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true );
+                        $image = wp_get_attachment_url( $thumbnail_id );
+                    ?>
+                    <a href="<?php echo get_term_link( $category ); ?>">
+                        <img src="<?php echo $image; ?>" alt="">
+                        <p>Nhẫn nam</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/kim-cuong-gia-1-scaled-247x296.jpg" alt="">
-                        <p>jemmia jewelry</p>
+                    <?php
+                        $terms = 'nhan-cuoi';
+                        $category = get_term_by('slug', $terms, 'product_cat');
+                        $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true );
+                        $image = wp_get_attachment_url( $thumbnail_id );
+                    ?>
+                    <a href="<?php echo get_term_link( $category ); ?>">
+                        <img src="<?php echo $image; ?>" alt="">
+                        <p>nhẫn cưới</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <?php
+                        $terms = 'bong-tai';
+                        $category = get_term_by('slug', $terms, 'product_cat');
+                        $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true );
+                        $image = wp_get_attachment_url( $thumbnail_id );
+                    ?>
+                    <a href="<?php echo get_term_link( $category ); ?>">
+                        <img src="<?php echo $image; ?>" alt="">
+                        <p>bông tai</p>
+                    </a>
+                </li>
+                <li>
+                    <?php
+                        $terms = 'kim-cuong';
+                        $category = get_term_by('slug', $terms, 'product_cat');
+                        $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true );
+                        $image = wp_get_attachment_url( $thumbnail_id );
+                    ?>
+                    <a href="<?php echo get_term_link( $category ); ?>">
+                        <img src="<?php echo $image; ?>" alt="">
+                        <p>kim cương</p>
+                    </a>
+                </li>
+                <li>
+
+                    <a href="https://jemmiasilver.vn">
                         <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/kim-cuong-gia-1-scaled-247x296.jpg" alt="">
-                        <p>love & wedding</p>
+                        <p>jemmia silver</p>
                     </a>
                 </li>
             </ul>
@@ -142,7 +186,7 @@ $upload_dir = wp_upload_dir();
 
         ?>
             <div class="prds-banner">
-                <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/9653f6102b68c96dd8f59808b3ceed9d.jpg" alt="">
+                <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/product-banner_1200x500_nhan-doi.jpg" alt="">
             </div>
             <a href="<?php echo get_term_link( $category ); ?>"><h2>nhẫn nam</h2></a>
             <div class="cat-products">
@@ -213,7 +257,7 @@ $upload_dir = wp_upload_dir();
 
         ?>
             <div class="prds-banner">
-                <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/9653f6102b68c96dd8f59808b3ceed9d.jpg" alt="">
+                <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/product-banner_1200x500_nhan-nam.jpg" alt="">
             </div>
             <a href="<?php echo get_term_link( $category ); ?>"><h2>nhẫn nữ</h2></a>
             <div class="cat-products">
@@ -284,7 +328,7 @@ $upload_dir = wp_upload_dir();
 
         ?>
             <div class="prds-banner">
-                <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/9653f6102b68c96dd8f59808b3ceed9d.jpg" alt="">
+                <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/product-banner_1200x500_nhan-nu.jpg" alt="">
             </div>
             <a href="<?php echo get_term_link( $category ); ?>"><h2>nhẫn cưới</h2></a>
             <div class="cat-products">
@@ -355,7 +399,7 @@ $upload_dir = wp_upload_dir();
 
         ?>
             <div class="prds-banner">
-                <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/9653f6102b68c96dd8f59808b3ceed9d.jpg" alt="">
+                <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/product-banner_1200x500_hoa-tai.jpg" alt="">
             </div>
             <a href="<?php echo get_term_link( $category ); ?>"><h2>bông tai</h2></a>
             <div class="cat-products">
@@ -426,7 +470,7 @@ $upload_dir = wp_upload_dir();
 
         ?>
             <div class="prds-banner">
-                <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/9653f6102b68c96dd8f59808b3ceed9d.jpg" alt="">
+                <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/product-banner_1200x500_kim-cuong.jpg" alt="">
             </div>
             <a href="<?php echo get_term_link( $category ); ?>"><h2>kim cương</h2></a>
             <div class="cat-products">

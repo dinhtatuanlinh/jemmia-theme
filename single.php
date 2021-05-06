@@ -1,7 +1,7 @@
 <?php 
 get_header(); 
 get_header('top');
-get_header('banner');
+
 $upload_dir = wp_upload_dir();
 
 
@@ -9,24 +9,149 @@ $upload_dir = wp_upload_dir();
 
 
 </div>
+<div id="more">
+    <div id="quick-menu">
+        <div class="wrapper">
+            <ul>
+                <li>
+                    <?php
+                        $terms = 'nhan-nu';
+                        $category = get_term_by('slug', $terms, 'product_cat');
+
+                        $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true );
+                        $image = wp_get_attachment_url( $thumbnail_id );
+                    ?>
+                    <a href="<?php echo get_term_link( $category ); ?>">
+                        <img src="<?php echo $image; ?>" alt="">
+                        <p>Nhẫn nữ</p>
+                    </a>
+                </li>
+                <li>
+                    <?php
+                        $terms = 'nhan-nam';
+                        $category = get_term_by('slug', $terms, 'product_cat');
+                        $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true );
+                        $image = wp_get_attachment_url( $thumbnail_id );
+                    ?>
+                    <a href="<?php echo get_term_link( $category ); ?>">
+                        <img src="<?php echo $image; ?>" alt="">
+                        <p>Nhẫn nam</p>
+                    </a>
+                </li>
+                <li>
+                    <?php
+                        $terms = 'nhan-cuoi';
+                        $category = get_term_by('slug', $terms, 'product_cat');
+                        $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true );
+                        $image = wp_get_attachment_url( $thumbnail_id );
+                    ?>
+                    <a href="<?php echo get_term_link( $category ); ?>">
+                        <img src="<?php echo $image; ?>" alt="">
+                        <p>nhẫn cưới</p>
+                    </a>
+                </li>
+                <li>
+                    <?php
+                        $terms = 'bong-tai';
+                        $category = get_term_by('slug', $terms, 'product_cat');
+                        $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true );
+                        $image = wp_get_attachment_url( $thumbnail_id );
+                    ?>
+                    <a href="<?php echo get_term_link( $category ); ?>">
+                        <img src="<?php echo $image; ?>" alt="">
+                        <p>bông tai</p>
+                    </a>
+                </li>
+                <li>
+                    <?php
+                        $terms = 'kim-cuong';
+                        $category = get_term_by('slug', $terms, 'product_cat');
+                        $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true );
+                        $image = wp_get_attachment_url( $thumbnail_id );
+                    ?>
+                    <a href="<?php echo get_term_link( $category ); ?>">
+                        <img src="<?php echo $image; ?>" alt="">
+                        <p>kim cương</p>
+                    </a>
+                </li>
+                <li>
+
+                    <a href="https://jemmiasilver.vn">
+                        <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/kim-cuong-gia-1-scaled-247x296.jpg" alt="">
+                        <p>jemmia silver</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="more-info">
+        <div class="wrapper">
+            <div class="post">
+                <div class="wrap-title">Bạn hãy xem thêm</div>
+                <div >
+                    <a class="view-more-item d-flex mb-3" target="_parent" href="https://jemmia.vn/bang-gia-kim-cuong-moissanite/">
+
+                        <div class="title">Bảng giá Moissanite hiện nay</div>
+                    </a>
+                    <a class="view-more-item d-flex mb-3" target="_parent" href="https://jemmia.vn/gia-kim-cuong-cvd/">
+
+                        <div class="title">Bảng giá kim cương CVD</div>
+                    </a>
+                    <a class="view-more-item d-flex mb-0" target="_parent" href="https://jemmia.vn/bang-gia-kim-cuong-tu-nhien/">
+
+                        <div class="title">Bảng giá kim cương tự nhiên hiện nay</div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="products">
+                
+                <div class="wrap-title">Có thể bạn quan tâm</div>
+                <div class="wrap-item">
+                    <a style="border-bottom: 1px solid #E3E4E5" target="_blank" href="https://jemmia.vn/trang-suc-vang/nhan-vang/nhan-cau-hon/">
+                        <div class="interest-image">
+                            <img class="picture-style" src="https://cdn.autoads.asia/maxlead/CustomWebsite/jemmia/imgs/category/interest-ring.png">
+                        </div>
+                        <div class="interest-content">
+                            <div class="title-child">Xem nhẫn cầu hôn 2020</div>
+                                <div class="title">XEM NGAY</div>
+
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://jemmia.vn/bang-gia-kim-cuong-tu-nhien/">
+                        <div class="interest-image">
+                            <img class="picture-style" src="https://cdn.autoads.asia/maxlead/CustomWebsite/jemmia/imgs/category/interest-diamond.png">
+                        </div>
+                        <div class="interest-content">
+                            <div class="title-child">Xem giá kim cương</div>
+                            
+                                <div class="title">XEM NGAY</div>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 <div id="second-main">
     <div class="wrapper">
     <div id="content">
         <div class="heading">
             <h1><?php the_title(); ?></h1>
-            <div class="date">Đăng vào: <?php the_date() ; ?></div>
-            <div class="author">Bởi: <?php the_author(); ?> </div>
+            <div class="date">Đăng vào: <?php echo get_the_date() ; ?></div>
         </div>
         <div class="main-content">
-        <?php the_content(); ?>
+        <?php //the_content(); ?>
+        <?php 
+            $str = get_the_content(); 
+            $find = '</h2>';
+            $pos = strpos($str, $find, 10);
+            echo $pos;
+            // echo htmlspecialchars($str);
+        ?>
         </div>
-        <!-- <?php
-            
-            echo '<pre style="color: #fff">';
-            print_r(the_title());
-            print_r(the_content());
-            echo '</pre>';
-        ?> -->
     </div>
     <?php
             get_sidebar();

@@ -46,7 +46,11 @@ switch ( $template ) {
 	case 'twentysixteen':
 		echo '</main></div>';
 		break;
+	case 'jemmia-theme':
+		echo '';
+		break;
 	default:
 		echo '</div>';
+
 		break;
 }

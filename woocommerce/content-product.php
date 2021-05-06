@@ -24,7 +24,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<div class="w3-col s12 m4 l4 cat-items" <?php wc_product_class( '', $product ); ?>>
+<div class="cat-items" <?php wc_product_class( '', $product ); ?>>
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.
@@ -40,7 +40,9 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 * @hooked woocommerce_template_loop_product_thumbnail - 10
 	 */
 	do_action( 'woocommerce_before_shop_loop_item_title' );
-
+	?>
+	<div class="info-products">
+	<?php
 	/**
 	 * Hook: woocommerce_shop_loop_item_title.
 	 *
@@ -65,4 +67,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 	do_action( 'woocommerce_after_shop_loop_item' );
 	?>
+	<div class="advice">tư vấn nhanh</div>
+	</div>
 </div>

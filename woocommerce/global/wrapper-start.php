@@ -43,9 +43,11 @@ switch ( $template ) {
 	case 'twentysixteen':
 		echo '<div id="primary" class="content-area twentysixteen"><main id="main" class="site-main" role="main">';
 		break;
-	// case 'streetwear':
-	// 	echo ''
+	case 'jemmia-theme':
+		echo '';
+		break;
 	default:
 		echo '<div class="wrapper">';
+	
 		break;
 }

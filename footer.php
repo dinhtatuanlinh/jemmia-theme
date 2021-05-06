@@ -105,6 +105,7 @@
 
     <!-- Scripts -->
     <?php wp_footer(); ?>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=750828008695156&ev=PageView&noscript=1"/></noscript>
 </body>
 
 </html>

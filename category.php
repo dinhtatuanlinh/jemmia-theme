@@ -44,7 +44,7 @@ $upload_dir = wp_upload_dir();
                 wp_reset_postdata();// reset lại đối tương wp_query
                 ?>
             </div>
-            <ul class="pagination">
+            <!-- <ul class="pagination">
                 <li><span class="button disabled">Prev</span></li>
                 <li><a href="#" class="page active">1</a></li>
                 <li><a href="#" class="page">2</a></li>
@@ -54,7 +54,7 @@ $upload_dir = wp_upload_dir();
                 <li><a href="#" class="page">9</a></li>
                 <li><a href="#" class="page">10</a></li>
                 <li><a href="#" class="button">Next</a></li>
-            </ul>
+            </ul> -->
             
         </div>
         <?php

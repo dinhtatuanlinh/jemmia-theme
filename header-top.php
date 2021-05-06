@@ -104,11 +104,11 @@
         <div id="navi">
             <div class="wrapper">
                 <div id="logo">
-                    <a href=""><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/change-color-06.png" alt="jemmia"></a>
+                    <a href="<?php echo get_home_url(); ?>"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/change-color-06.png" alt="jemmia"></a>
                 </div>
                 <nav class="tablet-hide mobile-hide">
                     <ul>
-                        <li><a href="">Trang chủ</a></li>
+                        <li><a href="<?php echo get_home_url(); ?>">Trang chủ</a></li>
                         <li>
                             <a href="">jemmia diamond</a>
                             <ul>
