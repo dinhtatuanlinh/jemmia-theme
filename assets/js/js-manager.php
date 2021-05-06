@@ -14,7 +14,7 @@ function dttl_register_js(){
     wp_enqueue_script('open-close-menu');
     wp_register_script('slider-index', $jsUrl . '/slider-index.js', array(), '1.0', true);
     wp_enqueue_script('slider-index');
-    wp_register_script('facebook', $jsUrl . '/facebook.js', array(), '1.0', true);
-    wp_enqueue_script('facebook');
+    // wp_register_script('facebook', $jsUrl . '/facebook.js', array(), '1.0', true);
+    // wp_enqueue_script('facebook');
 }
 ?>
