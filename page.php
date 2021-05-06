@@ -14,8 +14,14 @@ $upload_dir = wp_upload_dir();
     <div id="page">
         <div class="wrapper">
         <?php
-            echo 'page';
-        ?>
+            // đoạn code này là cần thiết để hiển thị các trang mặc định như cart của woocommerce
+            while (have_posts()) : the_post();
+
+            the_content();
+
+            endwhile;
+
+            ?>
         </div>
     </div>
 
