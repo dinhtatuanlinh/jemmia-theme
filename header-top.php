@@ -150,7 +150,7 @@
                                 'link_after'           => '',
                                 'items_wrap'           => '<ul>%3$s<hr/></ul>',//%3$s tương ứng với giá trị trong cặp thẻ li đưa vào
                                 'item_spacing'         => 'preserve',
-                                'depth'                => 2,// cho phép menu hiện 2 cấp nếu bằng 0 thì hiện tất cả các cấp bằng 1 thì chỉ hiện menu cha
+                                'depth'                => 3,// cho phép menu hiện 2 cấp nếu bằng 0 thì hiện tất cả các cấp bằng 1 thì chỉ hiện menu cha
                                 'walker'               => '',
                                 'theme_location'       => 'main_menu',
                             );
