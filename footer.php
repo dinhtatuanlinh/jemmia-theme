@@ -101,7 +101,7 @@
             </div>
         </div>
     </footer>
-    <a href="#upper">
+    <a href="#gotop">
         <div id="up"><i class="fa fa-level-up" aria-hidden="true"></i>
         </div>
     </a>
@@ -218,7 +218,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHSKN4T"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<!-- chat facebook -->
+<!-- Messenger Plugin chat Code -->
+<div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v10.0'
+          });
+        };
 
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
+
+      <!-- Your Plugin chat code -->
+      <div class="fb-customerchat"
+        attribution="page_inbox"
+        page_id="110263770893806">
+      </div>
+<!-- end chat facebook -->
 
 </body>
 

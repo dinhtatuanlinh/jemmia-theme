@@ -80,14 +80,14 @@ $upload_dir = wp_upload_dir();
                     ?>
                     <a href="<?php echo get_term_link( $category ); ?>">
                         <img src="<?php echo $image; ?>" alt="">
-                        <p>kim cương</p>
+                        <p>mặt dây chuyền</p>
                     </a>
                 </li>
                 <li>
 
                     <a href="https://jemmiasilver.vn">
                         <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/kim-cuong-gia-1-scaled-247x296.jpg" alt="">
-                        <p>jemmia silver</p>
+                        <p>vỏ nhẫn</p>
                     </a>
                 </li>
             </ul>
