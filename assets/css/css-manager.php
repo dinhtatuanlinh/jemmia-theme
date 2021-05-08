@@ -8,7 +8,7 @@ function dttl_register_style() {
     wp_enqueue_style('dttl_fontawesome-all');
     wp_register_style('swiper-bundle', $cssUrl . '/swiper-bundle.min.css', array(), '1.0');
     wp_enqueue_style('swiper-bundle');
-    wp_register_style('style', $cssUrl . '/style.css', array(), '1.0');
+    wp_register_style('style', $cssUrl . '/style1.css', array(), '1.1');
     wp_enqueue_style('style');
 }
 ?>

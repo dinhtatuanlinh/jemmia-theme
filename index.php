@@ -148,7 +148,7 @@ $upload_dir = wp_upload_dir();
                              */
                             do_action( 'linh_addtocart');
                         ?>
-                            <div class="advice">tư vấn nhanh</div>
+                            <div class="advice">  messenger</div>
                         </div>
                     </div>
                     <?php
@@ -188,13 +188,16 @@ $upload_dir = wp_upload_dir();
             
             $category = get_term_by('slug', $terms, 'product_cat');
             // echo get_term_link( $category );
-        
+            // echo '<pre style="color: #fff">';
+            // print_r($category);
+            // echo '</pre>';
 
         ?>
             <div class="prds-banner">
                 <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/product-banner_1200x500_nhan-doi.jpg" alt="">
             </div>
             <a href="<?php echo get_term_link( $category ); ?>"><h2>nhẫn nam</h2></a>
+            <hr>
             <div class="cat-products">
                 <div class="swiper-wrapper">
                     <?php
@@ -230,7 +233,7 @@ $upload_dir = wp_upload_dir();
                              */
                             do_action( 'linh_addtocart');
                         ?>
-                            <div class="advice">tư vấn nhanh</div>
+                            <div class="advice">  messenger</div>
                         </div>
                     </div>
                     <?php
@@ -273,6 +276,7 @@ $upload_dir = wp_upload_dir();
                 <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/product-banner_1200x500_nhan-nam.jpg" alt="">
             </div>
             <a href="<?php echo get_term_link( $category ); ?>"><h2>nhẫn nữ</h2></a>
+            <hr>
             <div class="cat-products">
                 <div class="swiper-wrapper">
                     <?php
@@ -307,7 +311,7 @@ $upload_dir = wp_upload_dir();
                              */
                             do_action( 'linh_addtocart');
                         ?>
-                            <div class="advice">tư vấn nhanh</div>
+                            <div class="advice">  messenger</div>
                         </div>
                     </div>
                     <?php
@@ -350,6 +354,7 @@ $upload_dir = wp_upload_dir();
                 <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/product-banner_1200x500_nhan-nu.jpg" alt="">
             </div>
             <a href="<?php echo get_term_link( $category ); ?>"><h2>nhẫn cưới</h2></a>
+            <hr>
             <div class="cat-products">
                 <div class="swiper-wrapper">
                     <?php
@@ -384,7 +389,7 @@ $upload_dir = wp_upload_dir();
                              */
                             do_action( 'linh_addtocart');
                         ?>
-                            <div class="advice">tư vấn nhanh</div>
+                            <div class="advice">  messenger</div>
                         </div>
                     </div>
                     <?php
@@ -427,6 +432,7 @@ $upload_dir = wp_upload_dir();
                 <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/product-banner_1200x500_hoa-tai.jpg" alt="">
             </div>
             <a href="<?php echo get_term_link( $category ); ?>"><h2>bông tai</h2></a>
+            <hr>
             <div class="cat-products">
                 <div class="swiper-wrapper">
                     <?php
@@ -461,7 +467,7 @@ $upload_dir = wp_upload_dir();
                              */
                             do_action( 'linh_addtocart');
                         ?>
-                            <div class="advice">tư vấn nhanh</div>
+                            <div class="advice">  messenger</div>
                         </div>
                     </div>
                     <?php
@@ -504,6 +510,7 @@ $upload_dir = wp_upload_dir();
                 <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/product-banner_1200x500_kim-cuong.jpg" alt="">
             </div>
             <a href="<?php echo get_term_link( $category ); ?>"><h2>kim cương</h2></a>
+            <hr>
             <div class="cat-products">
                 <div class="swiper-wrapper">
                     <?php
@@ -540,7 +547,7 @@ $upload_dir = wp_upload_dir();
                              */
                             do_action( 'linh_addtocart');
                         ?>
-                            <div class="advice">tư vấn nhanh</div>
+                            <div class="advice">   messenger</div>
                         </div>
                     </div>
                     <?php

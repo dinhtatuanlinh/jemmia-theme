@@ -27,7 +27,7 @@
             wp_nav_menu( $args );
         }
     ?>
-        <ul>
+        <!-- <ul>
             <li><a href="">Trang chủ</a></li>
             <li>
                 <a href="">jemmia diamond</a>
@@ -98,7 +98,7 @@
                     <li><a href="">Bảng giá kim cương CVD</a></li>
                 </ul>
             </li>
-        </ul>
+        </ul> -->
 </div>
 <div id="upper" name="upper">
     <div class="wrapper">
@@ -141,7 +141,7 @@
                             wp_nav_menu( $args );
                         }
                     ?>
-                <nav class="tablet-hide mobile-hide">
+                <!-- <nav class="tablet-hide mobile-hide">
                     <ul>
                         <li><a href="<?php echo get_home_url(); ?>">Trang chủ</a></li>
                         <li>
@@ -220,7 +220,7 @@
                             </ul>
                         </li>
                     </ul>
-                </nav>
+                </nav> -->
                 <div id="mobile-icon-menu" class="desktop-hide" onclick="openmenu()">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
