@@ -76,7 +76,7 @@ $upload_dir = wp_upload_dir();
                 </li>
                 <li>
                     <?php
-                        $terms = 'Không có sẵn	vo-nhan-kim-cuong-tu-nhien';
+                        $terms = 'vo-nhan-kim-cuong-tu-nhien';
                         $category = get_term_by('slug', $terms, 'product_cat');
                         $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true );
                         $image = wp_get_attachment_url( $thumbnail_id );
