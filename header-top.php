@@ -102,8 +102,8 @@
 </div>
 <div id="upper" name="upper">
     <div class="wrapper">
-        
-        <div class="phone icon"><img src="<?php echo JEMMIA_THEME_URL_ICON; ?>/phone.png" alt=""><label><a href="tel:0775 110 111">0775 110 111</a></label></div>
+        <div class="sologan">jemmia trùm kim cương sỉ GIA</div>
+        <div class="phone icon"><img src="<?php echo JEMMIA_THEME_URL_ICON; ?>/phone.png" alt=""><label><a href="tel:0775 110 111">0838353333</a></label></div>
 
     </div>
 </div>
@@ -112,6 +112,9 @@
 
     <div id="navi">
         <div class="wrapper">
+            <div id="mobile-icon-menu" class="desktop-hide" onclick="openmenu()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
             <div id="logo">
                 <a href="<?php echo get_home_url(); ?>"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/change-color-06.png" alt="jemmia"></a>
             </div>
@@ -221,8 +224,6 @@
                         </li>
                     </ul>
                 </nav>
-                <div id="mobile-icon-menu" class="desktop-hide" onclick="openmenu()">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </div>
+                
         </div>
     </div>

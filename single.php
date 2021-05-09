@@ -71,12 +71,17 @@ $upload_dir = wp_upload_dir();
                     ?>
                     <a href="<?php echo get_term_link( $category ); ?>">
                         <img src="<?php echo $image; ?>" alt="">
-                        <p>mặt dây chuyền</p>
+                        <p>mặt dây</p>
                     </a>
                 </li>
                 <li>
-
-                    <a href="https://jemmiasilver.vn">
+                    <?php
+                        $terms = 'Không có sẵn	vo-nhan-kim-cuong-tu-nhien';
+                        $category = get_term_by('slug', $terms, 'product_cat');
+                        $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true );
+                        $image = wp_get_attachment_url( $thumbnail_id );
+                    ?>
+                    <a href="<?php echo get_term_link( $category ); ?>">
                         <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/kim-cuong-gia-1-scaled-247x296.jpg" alt="">
                         <p>vỏ nhẫn</p>
                     </a>
@@ -93,13 +98,13 @@ $upload_dir = wp_upload_dir();
 
                         <div class="title">Bảng giá Moissanite hiện nay</div>
                     </a>
-                    <a class="view-more-item d-flex mb-3" target="_parent" href="https://jemmia.vn/gia-kim-cuong-cvd/">
+                    <a class="view-more-item d-flex mb-3" target="_parent" href="https://jemmia.vn/bang-gia-kim-cuong-tu-nhien">
 
-                        <div class="title">Bảng giá kim cương CVD</div>
+                        <div class="title">Bảng giá kim cương lẻ</div>
                     </a>
-                    <a class="view-more-item d-flex mb-0" target="_parent" href="https://jemmia.vn/bang-gia-kim-cuong-tu-nhien/">
+                    <a class="view-more-item d-flex mb-0" target="_parent" href="https://jemmia.vn/bang-gia-si-kim-cuong-gia">
 
-                        <div class="title">Bảng giá kim cương tự nhiên hiện nay</div>
+                        <div class="title">Bảng giá kim cương sỉ</div>
                     </a>
 
                 </div>
@@ -123,7 +128,7 @@ $upload_dir = wp_upload_dir();
                             <img class="picture-style" src="https://cdn.autoads.asia/maxlead/CustomWebsite/jemmia/imgs/category/interest-diamond.png">
                         </div>
                         <div class="interest-content">
-                            <div class="title-child">Xem giá kim cương</div>
+                            <div class="title-child">Xem giá vỏ nhẫn</div>
                             
                                 <div class="title">XEM NGAY</div>
                         </div>

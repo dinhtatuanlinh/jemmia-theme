@@ -106,7 +106,7 @@
         </div>
     </a>
     <a href="<?php echo WC()->cart->get_cart_url(); ?>">
-        <div id="cart">
+        <div id="cart" class="mobile-hide">
             <?php // my_wc_cart_count fucntion
 
                 do_action('linh_cart_icon');
@@ -128,7 +128,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- NOVAON -->
 <!--Start of AutoAds Tracking Code-->
-<!-- <script id='autoAdsMaxLead-widget-script' src='https://cdn.autoads.asia/scripts/autoads-maxlead-widget.js?business_id=FB057E6DE77242829BA4F5B6334AA66D' type='text/javascript' charset='UTF-8' async></script> -->
+<script id='autoAdsMaxLead-widget-script' src='https://cdn.autoads.asia/scripts/autoads-maxlead-widget.js?business_id=FB057E6DE77242829BA4F5B6334AA66D' type='text/javascript' charset='UTF-8' async></script>
 <!--End of AutoAds Tracking Code-->
 <!-- END NOVAON -->
 
