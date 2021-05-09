@@ -144,7 +144,7 @@
                             wp_nav_menu( $args );
                         }
                     ?>
-                <nav class="tablet-hide mobile-hide">
+                <!-- <nav class="tablet-hide mobile-hide">
                     <ul>
                         <li><a href="<?php echo get_home_url(); ?>">Trang chủ</a></li>
                         <li>
@@ -223,7 +223,7 @@
                             </ul>
                         </li>
                     </ul>
-                </nav>
+                </nav> -->
                 
         </div>
     </div>
