@@ -82,7 +82,6 @@ body {
 #upper .wrapper {
     position: relative;
     text-transform: uppercase;
-    font-style: italic;
     animation: move 7s linear 2s infinite;
 }
 
@@ -572,14 +571,10 @@ body {
 }
 
 #second-main .wrapper #content .products .cat-items .info-products {
-    position: absolute;
-    left: 0;
-    bottom: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px 10px 0 0;
 }
 
 #second-main .wrapper #content .products .cat-items .info-products:hover {
@@ -599,14 +594,14 @@ body {
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
-    color: #000;
+    color: #fff;
 }
 
 #second-main .wrapper #content .products .cat-items .info-products .price {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #000;
+    color: #fff;
 }
 
 #second-main .wrapper #content .products .cat-items .info-products .price ins {
@@ -849,6 +844,16 @@ footer #bottom .wrapper .payment-icons .payment-icon {
 
 footer #bottom .wrapper .payment-icons .payment-icon svg {
     fill: #ccc;
+}
+
+#cart_button {
+    display: flex;
+    align-items: flex-end;
+}
+
+#cart_button img {
+    width: 30px;
+    margin: 5px;
 }
 
 #up {
@@ -1800,8 +1805,8 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
         flex-direction: column;
     }
     footer #info .wrapper .col img {
-        width: 30%;
-        padding: 20px;
+        width: 70%;
+        padding: 10px;
     }
     #more-info .wrapper {
         flex-direction: column;

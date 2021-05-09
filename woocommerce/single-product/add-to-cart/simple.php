@@ -45,8 +45,11 @@ if ( $product->is_in_stock() ) : ?>
 
 		do_action( 'woocommerce_after_add_to_cart_quantity' );
 		?>
-
-		<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+		
+		<div id="cart_button">
+			<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+			<a class="messenger" href="https://m.me/745699598919099?ref=be176aa1-a0b8-48da-aafb-655487f695b7"><img src="<?php echo JEMMIA_THEME_URL_ICON; ?>/PikPng.com_new-icon-png_2592784.png" alt=""></a>
+		</div>
 
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 	</form>

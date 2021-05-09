@@ -50,7 +50,8 @@
                 </div>
                 <div class="col">
                     <h3>fanpage</h3>
-                    <a href='http://online.gov.vn/Home/WebDetails/76983'><img alt=' ' title=' ' src='http://online.gov.vn/Content/EndUser/LogoCCDVSaleNoti/logoSaleNoti.png ' /></a>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FJemmia.vn&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    <a href='http://online.gov.vn/Home/WebDetails/76983'><img alt=' ' title=' ' src='<?php echo JEMMIA_THEME_URL_ICON; ?>/logoSaleNoti.png' /></a>
                 </div>
             </div>
         </div>
@@ -244,30 +245,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         page_id="110263770893806">
       </div>
 <!-- end chat facebook -->
-<script>
-  function addStr(str, index, stringToAdd) {
-    return str.substring(0, index) + stringToAdd + str.substring(index, str.length);
-}
-var nav = document.getElementById('navi');
-var firstli = nav.querySelectorAll('nav > ul >li');
-for (var i = 0; i < firstli.length; i++) {
-    var childul = firstli[i].getElementsByTagName('ul');
-    if (childul.length > 0) {
 
-        var n = firstli[i].innerHTML.search('<ul');
-
-        firstli[i].innerHTML = addStr(firstli[i].innerHTML, n - 1, '<i class="fa fa-caret-down" aria-hidden="true"></i>');
-        var secondli = childul[0].getElementsByTagName('li');
-        for (var j = 0; j < secondli.length; j++) {
-            var secondchildul = secondli[j].getElementsByTagName('ul');
-            if (secondchildul.length > 0) {
-                var m = secondli[j].innerHTML.search('<ul');
-                secondli[j].innerHTML = addStr(secondli[j].innerHTML, m - 1, '<i class="fa fa-caret-right" aria-hidden="true"></i>');
-            }
-        }
-    }
-
-}
 </script>
 </body>
 

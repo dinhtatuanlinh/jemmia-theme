@@ -19,6 +19,7 @@ $upload_dir = wp_upload_dir();
             <div><a href="https://jemmia.vn/uu-dai-trang-suc-vang"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/flash-sale.jpg" alt=""></a></div>
         </div>
     </div>
+
     <div id="quick-menu" class="desktop-hide">
         <div class="wrapper">
             <h2>Danh mục ưa chuộng</h2>
@@ -30,6 +31,7 @@ $upload_dir = wp_upload_dir();
 
                         $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true );
                         $image = wp_get_attachment_url( $thumbnail_id );
+
                     ?>
                     <a href="<?php echo get_term_link( $category ); ?>">
                         <img src="<?php echo $image; ?>" alt="">
@@ -100,6 +102,7 @@ $upload_dir = wp_upload_dir();
             </ul>
         </div>
     </div>
+
     <div id="hotdeal">
         <div class="wrapper">
             <div class="hd-banner">
@@ -120,10 +123,7 @@ $upload_dir = wp_upload_dir();
                             'hide_empty' => false,
                         );
                         $query = new WP_Query( $args );
-                        // echo count($blogs);
-                        // echo '<pre style="color: #000">';
-                        // print_r($query);
-                        // echo '</pre>';
+
                         if ( $query->have_posts() ) :
                             while ($query->have_posts()) : $query->the_post();//phải dùng vòng lặp while để lấy ra đúng bài được chọn
                             $product = wc_get_product( get_the_ID() ); /* get the WC_Product Object */
