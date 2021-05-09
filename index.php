@@ -146,9 +146,10 @@ $upload_dir = wp_upload_dir();
                              *
                              * @hooked woocommerce_template_loop_add_to_cart - 5
                              */
-                            do_action( 'linh_addtocart');
+                            // do_action( 'linh_addtocart');
                         ?>
-                            <div class="advice">  messenger</div>
+                            <!-- <div class="advice"><img src="<?php //echo JEMMIA_THEME_URL_ICON; ?>/PikPng.com_new-icon-png_2592784.png" alt=""></div> -->
+                            
                         </div>
                     </div>
                     <?php
@@ -231,9 +232,9 @@ $upload_dir = wp_upload_dir();
                              *
                              * @hooked woocommerce_template_loop_add_to_cart - 5
                              */
-                            do_action( 'linh_addtocart');
+                            // do_action( 'linh_addtocart');
                         ?>
-                            <div class="advice">  messenger</div>
+                            <!-- <div class="advice"><img src="<?php //echo JEMMIA_THEME_URL_ICON; ?>/PikPng.com_new-icon-png_2592784.png" alt=""></div> -->
                         </div>
                     </div>
                     <?php
@@ -309,9 +310,9 @@ $upload_dir = wp_upload_dir();
                              *
                              * @hooked woocommerce_template_loop_add_to_cart - 5
                              */
-                            do_action( 'linh_addtocart');
+                            // do_action( 'linh_addtocart');
                         ?>
-                            <div class="advice">  messenger</div>
+                            <!-- <div class="advice"><img src="<?php //echo JEMMIA_THEME_URL_ICON; ?>/PikPng.com_new-icon-png_2592784.png" alt=""></div> -->
                         </div>
                     </div>
                     <?php
@@ -387,9 +388,9 @@ $upload_dir = wp_upload_dir();
                              *
                              * @hooked woocommerce_template_loop_add_to_cart - 5
                              */
-                            do_action( 'linh_addtocart');
+                            // do_action( 'linh_addtocart');
                         ?>
-                            <div class="advice">  messenger</div>
+                            <!-- <div class="advice"><img src="<?php //echo JEMMIA_THEME_URL_ICON; ?>/PikPng.com_new-icon-png_2592784.png" alt=""></div> -->
                         </div>
                     </div>
                     <?php
@@ -465,9 +466,9 @@ $upload_dir = wp_upload_dir();
                              *
                              * @hooked woocommerce_template_loop_add_to_cart - 5
                              */
-                            do_action( 'linh_addtocart');
+                            // do_action( 'linh_addtocart');
                         ?>
-                            <div class="advice">  messenger</div>
+                            <!-- <div class="advice"><img src="<?php //echo JEMMIA_THEME_URL_ICON; ?>/PikPng.com_new-icon-png_2592784.png" alt=""></div> -->
                         </div>
                     </div>
                     <?php
@@ -545,9 +546,9 @@ $upload_dir = wp_upload_dir();
                              *
                              * @hooked woocommerce_template_loop_add_to_cart - 5
                              */
-                            do_action( 'linh_addtocart');
+                            // // do_action( 'linh_addtocart');
                         ?>
-                            <div class="advice">   messenger</div>
+                            <!-- <div class="advice"><img src="<?php //echo JEMMIA_THEME_URL_ICON; ?>/PikPng.com_new-icon-png_2592784.png" alt=""></div> -->
                         </div>
                     </div>
                     <?php

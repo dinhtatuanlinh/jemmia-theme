@@ -102,7 +102,7 @@
 </div>
 <div id="upper" name="upper">
     <div class="wrapper">
-        <div class="opentime icon"><img src="<?php echo JEMMIA_THEME_URL_ICON; ?>/clock.png" alt=""><label>08:00 - 17:00</label></div>
+        
         <div class="phone icon"><img src="<?php echo JEMMIA_THEME_URL_ICON; ?>/phone.png" alt=""><label><a href="tel:0775 110 111">0775 110 111</a></label></div>
 
     </div>
@@ -141,7 +141,7 @@
                             wp_nav_menu( $args );
                         }
                     ?>
-                <!-- <nav class="tablet-hide mobile-hide">
+                <nav class="tablet-hide mobile-hide">
                     <ul>
                         <li><a href="<?php echo get_home_url(); ?>">Trang chủ</a></li>
                         <li>
@@ -220,7 +220,7 @@
                             </ul>
                         </li>
                     </ul>
-                </nav> -->
+                </nav>
                 <div id="mobile-icon-menu" class="desktop-hide" onclick="openmenu()">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
