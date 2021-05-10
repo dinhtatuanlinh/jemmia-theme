@@ -34,8 +34,9 @@ for (var i = 0; i < mobile_firstli.length; i++) {
         for (var j = 0; j < secondli.length; j++) {
             var secondchildul = secondli[j].getElementsByTagName('ul');
             if (secondchildul.length > 0) {
+                secondchildul[0].classList.add('hide');
                 var m = secondli[j].innerHTML.search('<ul');
-                secondli[j].innerHTML = addStr(secondli[j].innerHTML, m - 1, `<i onclick="showChildMenu(${j})" class="fa fa-arrow-right" aria-hidden="true"></i>`);
+                secondli[j].innerHTML = addStr(secondli[j].innerHTML, m - 1, `<i onclick="show3ChildMenu(${i},${j})" class="fa fa-arrow-right" aria-hidden="true"></i>`);
             }
         }
     }
@@ -44,4 +45,26 @@ for (var i = 0; i < mobile_firstli.length; i++) {
 
 function showChildMenu(a) {
     mobile_firstli[a].getElementsByTagName('ul')[0].classList.remove('hide');
+    var num1 = mobile_firstli[a].getElementsByTagName('ul')[0].innerHTML.search('<li');
+    // console.log(num);
+    mobile_firstli[a].getElementsByTagName('ul')[0].innerHTML = addStr(mobile_firstli[a].getElementsByTagName('ul')[0].innerHTML, num1 - 1, `<i onclick="backChildMenu(${a})" class="fa fa-chevron-left back" aria-hidden="true"> trở lại</i>`);
+}
+
+function backChildMenu(a) {
+    mobile_firstli[a].getElementsByTagName('ul')[0].innerHTML = mobile_firstli[a].getElementsByTagName('ul')[0].innerHTML.replace(`<i onclick="backChildMenu(${a})" class="fa fa-chevron-left back" aria-hidden="true"> trở lại</i>`, " ");
+    mobile_firstli[a].getElementsByTagName('ul')[0].classList.add('hide');
+}
+
+function show3ChildMenu(a, b) {
+    var selected = mobile_firstli[a].getElementsByTagName('ul')[0].getElementsByTagName('li')[b].getElementsByTagName('ul')[0];
+    selected.classList.remove('hide');
+
+    var num2 = selected.innerHTML.search('<li');
+    selected.innerHTML = addStr(selected.innerHTML, num2 - 1, `<i onclick="back3ChildMenu(${a},${b})" class="fa fa-chevron-left back" aria-hidden="true"> trở lại</i>`);
+}
+
+function back3ChildMenu(a, b) {
+    var selected = mobile_firstli[a].getElementsByTagName('ul')[0].getElementsByTagName('li')[b].getElementsByTagName('ul')[0];
+    selected.innerHTML = selected.innerHTML.replace(`<i onclick="backChildMenu(${a},${b})" class="fa fa-chevron-left back" aria-hidden="true"> trở lại</i>`, " ");
+    selected.classList.add('hide');
 }
