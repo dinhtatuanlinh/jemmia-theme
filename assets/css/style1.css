@@ -12,6 +12,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.hide {
+    display: none !important;
+}
+
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -31,15 +35,14 @@ body {
     position: fixed;
     top: 0;
     left: -410px;
-    width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #f5f7fa;
     z-index: 50;
     overflow: scroll;
 }
 
 #mobile-menu .close {
-    color: #fff;
+    color: var(--main-bg-color);
     display: flex;
     justify-content: flex-end;
     padding: 10px;
@@ -47,7 +50,7 @@ body {
 }
 
 #mobile-menu .close i {
-    border: 1px solid #fff;
+    border: 1px solid var(--main-bg-color);
     border-radius: 50px;
     padding: 10px;
 }
@@ -63,7 +66,7 @@ body {
 
 #mobile-menu ul li a {
     text-decoration: none;
-    color: #fff;
+    color: var(--main-bg-color);
     height: 30px;
 }
 
@@ -1393,6 +1396,9 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
         align-items: center;
         flex-direction: column;
     }
+    #mobile-menu {
+        width: 400px;
+    }
 }
 
 
@@ -1586,6 +1592,9 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     #more-info .wrapper .post {
         width: 50%;
         padding: 20px;
+    }
+    #mobile-menu {
+        width: 400px;
     }
 }
 
@@ -1833,17 +1842,37 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
         padding: 20px;
         box-sizing: border-box;
     }
+    #mobile-menu {
+        width: 100vw;
+    }
+    #mobile-menu ul>li>ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #f5f7fa;
+    }
+    #mobile-menu ul>li>ul>li>ul {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #f5f7fa;
+    }
     /* blog image */
     .wp-caption {
         width: 100% !important;
     }
     .wp-caption img {
         width: 100%;
-        height: 428px !important;
+        height: 335px !important;
     }
     .main-content img {
         width: 100%;
-        height: 400px;
+        height: 335px;
     }
     /* end blog image */
 }
