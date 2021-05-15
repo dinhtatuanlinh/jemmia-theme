@@ -14,9 +14,13 @@ $upload_dir = wp_upload_dir();
 <div id="main">
     <div id="special">
         <div class="wrapper">
-            <div><a href="https://jemmia.vn/san-pham-ban-chay"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/sp-ban-chay.jpg" alt=""></a></div>
-            <div><a href="https://jemmia.vn/san-pham-moi"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/sp-moi.jpg" alt=""></a></div>
-            <div><a href="https://jemmia.vn/uu-dai-trang-suc-vang"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/flash-sale.jpg" alt=""></a></div>
+
+            <div>
+                
+                <a href="<?php echo home_url(); ?>/san-pham-ban-chay"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/sp-ban-chay.jpg" alt=""></a>
+            </div>
+            <div><a href="<?php echo home_url(); ?>/san-pham-moi"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/sp-moi.jpg" alt=""></a></div>
+            <div><a href="<?php echo home_url(); ?>/uu-dai-trang-suc-vang"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/flash-sale.jpg" alt=""></a></div>
         </div>
     </div>
 

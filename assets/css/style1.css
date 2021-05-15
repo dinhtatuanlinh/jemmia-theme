@@ -1209,6 +1209,7 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #top #navi .wrapper nav ul li i {
         color: #fff;
+        padding: 0 5px;
     }
     #top #navi .wrapper nav ul li a {
         text-decoration: none;
@@ -1378,7 +1379,8 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #second-main .wrapper #sidebar {
         flex: 1;
-        margin: 20px 0 20px 20px;
+        padding: 20px 24px 0;
+        box-sizing: border-box;
     }
     #second-main .wrapper #content .products .cat-items {
         width: 24%;
@@ -1562,8 +1564,7 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #second-main .wrapper #sidebar {
         flex: 1;
-        padding: 20px;
-        margin: 20px 10px;
+        padding: 20px 24px 0;
     }
     #second-main .wrapper #content .post-wrapper .items {
         width: 50%;

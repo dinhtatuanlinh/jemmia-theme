@@ -142,17 +142,17 @@ $upload_dir = wp_upload_dir();
 </div>
 <div id="second-main">
     <div class="wrapper">
-    <div id="content">
-        <div class="heading">
-            <h1><?php the_title(); ?></h1>
-            <div class="date">Đăng vào: <?php echo get_the_date() ; ?></div>
-        </div>
-        <div class="main-content">
-        <?php the_content(); ?>
+        <div id="content">
+            <div class="heading">
+                <h1><?php the_title(); ?></h1>
+                <div class="date">Đăng vào: <?php echo get_the_date() ; ?></div>
+            </div>
+            <div class="main-content">
+            <?php the_content(); ?>
 
+            </div>
         </div>
-    </div>
-    <?php
+        <?php
             get_sidebar();
         ?>
     </div>
