@@ -20,6 +20,7 @@ $upload_dir = wp_upload_dir();
 
                 </header>
                 <?php
+                    
                     $args = array(
                         'post_type' => 'product',
                         'tax_query' => array(
@@ -28,7 +29,7 @@ $upload_dir = wp_upload_dir();
                                 'field'    => 'name',
                                 'terms'    => 'moigiam30',
                             ),),
-                        // 'posts_per_page' => 16,
+                        'posts_per_page' => get_option("posts_per_page"),//get_option("posts_per_page) là lấy giá trị số bài viết trên trang được cài đặt trong setting
                         // 'paged' => get_query_var( 'paged' ),
                         'orderby'    => 'date',
                         'order'      => 'DESC',
@@ -64,8 +65,7 @@ $upload_dir = wp_upload_dir();
                     wp_reset_postdata();// reset lại đối tương wp_query
                     ?>
                     <?php
-                        $abc = 'abc';
-                        get_template_part( 'inc/pagination', $abc);
+                        echo linh_pagination_code($query);
                     ?>
                 </div>
             </div>

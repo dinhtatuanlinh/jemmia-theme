@@ -102,7 +102,7 @@
 </div>
 <div id="upper" name="upper">
     <div class="wrapper">
-        <div class="sologan">jemmia trùm kim cương sỉ GIA</div>
+        <div class="slogan">jemmia trùm kim cương sỉ GIA</div>
         <div class="phone icon"><img src="<?php echo JEMMIA_THEME_URL_ICON; ?>/phone.png" alt=""><label><a href="tel:0775 110 111">0838353333</a></label></div>
 
     </div>

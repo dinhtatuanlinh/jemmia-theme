@@ -7,6 +7,19 @@ get_header('top');
 
 ?>
 </div>
+<div id="cat_banner">
+    <?php 
+        $term = get_queried_object();
+        // echo $term->slug; // lấy slug của category
+        // $terms = 'nhan-nu';
+        $category = get_term_by('slug', $term->slug, 'product_cat');
+
+        $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true );
+        $image = wp_get_attachment_url( $thumbnail_id );
+    ?>
+
+    <img src="<?php echo $image; ?>" alt="">
+</div>
 <div id="second-main">
     <div class="wrapper">
         <div id="content">

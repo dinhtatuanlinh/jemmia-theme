@@ -7,6 +7,76 @@ define('JEMMIA_THEME_ASSETS_DIR', JEMMIA_THEME_DIR . '/assets');
 define('JEMMIA_THEME_CUSTOMIZER_DIR', JEMMIA_THEME_INC_DIR . '/customizer');
 define('JEMMIA_THEME_URL_IMG', get_template_directory_uri() . '/imgs');
 define('JEMMIA_THEME_URL_ICON', get_template_directory_uri() . '/icons');
+// 14.phân trang pagination
+// add_action('linh_pagination_code', "linh_pagination_code", 10);
+function linh_pagination_code($query) {
+    // biến $query là đối tượng WP_Query được sử dụng để gọi các bài viết ra trang
+    // echo '<pre style="color: #fff">';
+    // print_r($query->max_num_pages);
+    // echo '</pre>';
+    $big = 99999999;
+    $pagenum_link = str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) );//đưa định dạng trang vào đường dẫn
+    // $pagenum_link = str_replace('&','#038;', $pagenum_link);
+    // echo get_query_var('paged');// lấy số trang hiện tại
+    $pagiArgs = array(
+        'base' => $pagenum_link,
+        // 'base' => '%#%',
+        'format' => '?paged=%#%',
+        'current' => max( 1, get_query_var('paged')),// đoạn code này có ý nghĩa nếu tham số sau lớn hơn tham số trước thì lấy tham số sau làm giá trị
+        'total' => $query->max_num_pages,// lấy tổng số trang của category bằng $query->max_num_pages
+        'show_all' => false,
+        'end_size' => 1,
+        'mid_size' => 1,
+        'prev_next' => true,// true để hiển thị về trang trước và tiến lên trang tiếp
+        'prev_text' => '&larr;',
+        'next_text' => '&rarr;',
+        'type' => 'array',
+        // 'add_args' => array('test' => 'abc', 'type' => 'happy'),
+        // 'add_fragment' => '&test=abc',
+        // 'before_page_number' => '[',
+        // 'after_page_number' => ']'
+
+    );
+    // base: cơ sở của đườgn dẫn phân trang
+    // format: định dạng của cấu trúc phân trang
+    // current: số trang hiện tại. Mặc định là 1
+    // total: số trang tối đa
+    // show_all: hiển thị tất cả các trang hay rút gọn nó. Mặc định là false (rút gọn)
+    // end_size: số trang sẽ hiển thị đầu và cuối danh sách. Mặc định là 1
+    // mid_size: số trang sẽ hiễn thị 2 bên trang hiện tại. Mặc định là 2.
+    // prev_next: có hiển thị nút Trang trước và Trang Sau hay không. Mặc định là true.
+    // prev_text: đoạn ký tự cho nút Trang trước. Mặc định là “<<Previous”
+    // next_text: đoạn ký tự cho nút Trang sau. Mặc định là  “Next >>”
+    // type: điịnh dạng ủa giá trị trả về. Các giá trị có thể là ‘plain’, ‘array’ và ‘list’. Mặc định là ‘plain’
+    // add_array: mảng tham số truy vấn được thêm vào. Mặc định là false.
+    // add_fragment: chuỗi ký tự được thêm vào mỗi link page.
+    // before_page_number: chuỗi ký tự xuất hiện trước số trang
+    // after_page_number: chuỗi ký tự xuất hiện sau số trang
+    $pagiArray = paginate_links($pagiArgs);
+    // echo '<pre style="color: #fff">';
+    // print_r($pagiArray);
+    // echo '</pre>';
+    ?>
+    <?php
+        $pagiHTML = '
+            <div class="pagination">
+                <ul>
+        ';
+        if (!empty($pagiArray)){
+            foreach ($pagiArray as $pagiItem){
+                $pagiHTML .= '<li>' . $pagiItem . '</li>';
+                // echo '<li>' . $pagiItem . '</li>';
+            }
+        }
+        $pagiHTML .= '
+                </ul>
+            </div>
+        ';
+    ?>
+    <?php
+    return $pagiHTML;
+    
+}
 // 13. show sale percentage
 add_action( 'woocommerce_sale_flash', 'sale_badge_percentage', 25 );
  
