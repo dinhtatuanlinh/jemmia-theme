@@ -27,7 +27,7 @@
             wp_nav_menu( $args );
         }
     ?>
-        <ul>
+        <!-- <ul>
             <li><a href="">Trang chủ</a></li>
             <li>
                 <a href="">jemmia diamond</a>
@@ -98,7 +98,7 @@
                     <li><a href="">Bảng giá kim cương CVD</a></li>
                 </ul>
             </li>
-        </ul>
+        </ul> -->
 </div>
 <div id="upper" name="upper">
     <div class="wrapper">
