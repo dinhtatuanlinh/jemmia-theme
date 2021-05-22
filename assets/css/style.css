@@ -3,6 +3,10 @@
     src: url(../fonts/Roboto-Regular.ttf);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --main-bg-color: #0b2139;
     /* var(--main-bg-color) */
@@ -222,12 +226,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#quick-menu .wrapper ul li a p {
-    margin-bottom: 0;
-    font-size: 13px;
-    text-align: center;
 }
 
 #main {
@@ -1046,16 +1044,25 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
 
 /* bảng giá kim cương */
 
-#bgkc-classify .bgkc-col:nth-child(1) {
-    flex: 1
+.linh-sale {
+    font-weight: 600;
+    margin: 0;
+    line-height: 18px;
 }
 
-#bgkc-classify .bgkc-col:nth-child(2) {
-    flex: 2
+.linh-goc {
+    text-decoration: line-through;
+    margin: 0;
+    line-height: 18px;
 }
 
-#bgkc-classify .bgkc-col:nth-child(3) {
-    flex: 1
+.bgkc h2 {
+    text-align: center;
+}
+
+.bgkc p {
+    text-align: center;
+    font-weight: bold;
 }
 
 .bgkc-col {
@@ -1131,6 +1138,45 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
 .bgkc-tab-content .bgkc-col {
     flex: 1
 }
+
+.bgkc .blog-wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.bgkc .blog-wrapper .swiper-wrapper {
+    width: 100%;
+}
+
+.bgkc .blog-wrapper .swiper-wrapper .swiper-slide a {
+    text-decoration: none;
+    text-align: center;
+    color: #0b2139;
+}
+
+.bgkc .blog-wrapper .swiper-wrapper .swiper-slide a .img {
+    width: 380px;
+}
+
+.bgkc .blog-wrapper .swiper-wrapper .swiper-slide a .img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.bgkc .blog-wrapper .swiper-wrapper .swiper-slide a .blog-title {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bgkc .blog-wrapper .swiper-wrapper .swiper-slide a .short {
+    font-weight: normal;
+}
+
+
+/* end bảng giá kim cương */
 
 .pagination {
     width: 100%;
@@ -1228,6 +1274,15 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
         max-width: 1140px;
         margin: 0 auto;
     }
+    #bgkc-classify .bgkc-col:nth-child(1) {
+        flex: 1
+    }
+    #bgkc-classify .bgkc-col:nth-child(2) {
+        flex: 2
+    }
+    #bgkc-classify .bgkc-col:nth-child(3) {
+        flex: 1
+    }
     .bgkc-row {
         display: flex;
         justify-content: center;
@@ -1247,12 +1302,35 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     #bgkc-classify .bgkc-row {
         display: flex;
         justify-content: center;
-        width: 500px !important;
+        width: 100%;
+        padding: 0 10px;
+    }
+    #bgkc-classify .bgkc-col:nth-child(1) {
+        flex: 1
+    }
+    #bgkc-classify .bgkc-col:nth-child(2) {
+        flex: 1
+    }
+    #bgkc-classify .bgkc-col:nth-child(3) {
+        flex: 2
     }
     .bgkc-row {
         display: flex;
         justify-content: center;
-        width: 1140px;
+        width: 100%;
+        padding: 0 10px;
+    }
+    .bgkc-row .bgkc-col:nth-child(1) {
+        flex: 0.5;
+    }
+    .bgkc-row .bgkc-col:nth-child(2) {
+        flex: 0.5;
+    }
+    .bgkc-row .bgkc-col:nth-child(3) {
+        flex: 0.7;
+    }
+    .bgkc-row .bgkc-col {
+        flex: 1;
     }
 }
 
@@ -1333,7 +1411,7 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     #top #navi .wrapper nav>ul>li>ul>li {
         position: relative;
         height: 30px;
-        width: 240px;
+        width: 270px;
         line-height: 30px;
     }
     #top #navi .wrapper nav>ul>li>ul>li:hover {
@@ -1360,11 +1438,16 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
         background-color: rgba(0, 0, 0, 0.3);
     }
     #quick-menu .wrapper ul li a img {
-        width: 60px;
-        height: 60px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
         border: 2px solid #fff;
         transition: .3s ease-in-out;
+    }
+    #quick-menu .wrapper ul li a p {
+        margin-bottom: 0;
+        font-size: 18px;
+        text-align: center;
     }
     #main #special .wrapper div img {
         width: 100%;
@@ -1375,7 +1458,7 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #main #hotdeal {
         background-size: cover;
-        background-image: url(../../imgs/banner/hot-deal_background-2-1.jpg);
+        background-image: url(../../imgs/banner/ddd.jpg);
         background-repeat: no-repeat;
         /* background-attachment: fixed; */
         width: 100%;
@@ -1410,6 +1493,7 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
         width: 100%;
         overflow: hidden;
         position: relative;
+        padding-bottom: 60px;
     }
     #main #policy {
         background-size: cover;
@@ -1525,6 +1609,11 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     #mobile-menu {
         width: 400px;
     }
+    /* bảng giá kim cương sỉ */
+    .bgkc-title {
+        text-align: center;
+    }
+    /* end bảng giá kim cương sỉ */
 }
 
 
@@ -1579,6 +1668,11 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
         border-radius: 50%;
         border: 2px solid #fff;
         transition: .3s ease-in-out;
+    }
+    #quick-menu .wrapper ul li a p {
+        margin-bottom: 0;
+        font-size: 15px;
+        text-align: center;
     }
     #main #special .wrapper div {
         flex: 1;
@@ -1755,6 +1849,15 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
         height: 100vh;
         background-color: #f5f7fa;
     }
+    .gia {
+        width: 550px;
+        height: 180px;
+        margin: 0 auto;
+    }
+    .gia img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 
@@ -1810,6 +1913,11 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
         border-radius: 50%;
         border: 2px solid #fff;
         transition: .3s ease-in-out;
+    }
+    #quick-menu .wrapper ul li a p {
+        margin-bottom: 0;
+        font-size: 13px;
+        text-align: center;
     }
     #main #special {
         overflow: scroll;
@@ -2057,6 +2165,14 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     .main-content img {
         width: 100%;
         height: 335px;
+    }
+    .gia {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .gia img {
+        width: 100%;
+        height: auto;
     }
     /* end blog image */
 }

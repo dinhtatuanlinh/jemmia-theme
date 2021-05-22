@@ -24,7 +24,7 @@ $upload_dir = wp_upload_dir();
         </div>
     </div>
 
-    <div id="quick-menu" class="desktop-hide">
+    <div id="quick-menu">
         <div class="wrapper">
             <h2>Danh mục ưa chuộng</h2>
             <ul>
@@ -427,7 +427,7 @@ $upload_dir = wp_upload_dir();
             </div>
         </div>
         <div class="wrapper">
-        <?php
+            <?php
             // get hotdeal
             $terms = 'nhan-cuoi';
             $args = array(
@@ -451,7 +451,7 @@ $upload_dir = wp_upload_dir();
             // echo get_term_link( $category );
         
 
-        ?>
+            ?>
             <div class="prds-banner">
                 
                 <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/product-banner_1200x500_nhan-doi.jpg" alt="">
@@ -506,6 +506,7 @@ $upload_dir = wp_upload_dir();
             <div class="mobile-products tablet-hide desktop-hide">
                 <div class="mobile-products-wrapper">
                     <?php
+
                         if ( $query->have_posts() ) :
                             while ($query->have_posts()) : $query->the_post();//phải dùng vòng lặp while để lấy ra đúng bài được chọn
                             $product = wc_get_product( get_the_ID() ); /* get the WC_Product Object */
@@ -866,8 +867,8 @@ $upload_dir = wp_upload_dir();
                                     <a href="<?php echo get_permalink( $blog->ID); ?>">
                                         <img src="<?php echo get_the_post_thumbnail_url($blog->ID,'full'); ?>" alt="<?php echo $blog->post_title; ?>">
                                         <div class="blog-title"><?php echo $blog->post_title; ?></div>
-                                        <div class="date">Đăng vào: <?php echo explode(' ', $blog->post_date)[0] ; ?></div>
-                                        <div class="author">Bởi: <?php the_author_meta( 'user_nicename' , $author_id ); ?> </div>
+                                        <!-- <div class="date">Đăng vào: <?php //echo explode(' ', $blog->post_date)[0] ; ?></div>
+                                        <div class="author">Bởi: <?php //the_author_meta( 'user_nicename' , $author_id ); ?> </div> -->
                                         <p class="short"><?php echo get_the_excerpt($blog->ID); ?></p>
                                     </a>
 
@@ -877,7 +878,6 @@ $upload_dir = wp_upload_dir();
                             wp_reset_postdata();
                         }
                     ?>
-
                 </div>
             </div>
         </div>
