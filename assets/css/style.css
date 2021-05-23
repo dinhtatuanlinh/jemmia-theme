@@ -164,6 +164,8 @@ body {
 
 #top #banner img {
     width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 #top #navi {
@@ -188,7 +190,8 @@ body {
 
 #top #navi .wrapper #logo img {
     width: 68.39;
-    height: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 #quick-menu .wrapper {
@@ -239,6 +242,12 @@ body {
     background-color: rgb(250, 250, 250, 0.8);
 }
 
+#main #page .wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 #main #special .wrapper {
     display: flex;
     justify-content: space-around;
@@ -252,7 +261,8 @@ body {
 
 #main #hotdeal .hd-products .swiper-wrapper .swiper-slide .img img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    object-fit: cover;
     bottom: 0;
     left: 0;
     z-index: -1;
@@ -326,6 +336,8 @@ body {
 
 #main #show-product .wrapper .prds-banner img {
     width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 #main #show-product .cat-products {
@@ -366,13 +378,15 @@ body {
 
 #main #show-product .cat-products .swiper-slide .img,
 .new-products .cat-products .swiper-slide .img {
-    height: 100%;
+    height: auto;
+    object-fit: cover;
     width: 100%;
 }
 
 #main #show-product .cat-products .swiper-slide img,
 .new-products .cat-products .swiper-slide img {
-    width: 100%;
+    height: auto;
+    object-fit: cover;
     height: 100%;
 }
 
@@ -419,6 +433,7 @@ body {
 
 #main #policy .wrapper .policy-items img {
     height: 90px;
+    object-fit: cover;
 }
 
 #main #policy .wrapper .policy-items strong {
@@ -442,6 +457,8 @@ body {
 
 #main #about .wrapper img {
     width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 #main #about .wrapper .text {
@@ -501,7 +518,8 @@ body {
 
 #main #blog .wrapper a img {
     width: 100%;
-    height: 300px;
+    height: auto;
+    object-fit: cover;
 }
 
 #main #blog .wrapper a .blog-title {
@@ -795,6 +813,28 @@ body {
 
 /* ################################################################################## */
 
+
+/* single */
+
+#second-main .wrapper #contentBlog {
+    flex: 1;
+    background-color: var(--main-bg-color);
+    padding: 20px;
+}
+
+#second-main .wrapper #contentBlog h1 {
+    text-align: center;
+}
+
+#second-main .wrapper #contentBlog img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* end single */
+
 .mySwiper .swiper-slide-thumb-active {
     opacity: 1;
 }
@@ -935,6 +975,7 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     width: 40px !important;
     display: block;
     margin: 0 auto;
+    object-fit: cover;
 }
 
 .product-detail-size-guide i {
@@ -1451,6 +1492,8 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #main #special .wrapper div img {
         width: 100%;
+        height: auto;
+        object-fit: cover;
     }
     #main #special .wrapper div {
         flex: 1;
@@ -1479,6 +1522,7 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #main #hotdeal .hd-products .swiper-wrapper .swiper-slide .img img {
         position: absolute;
+        object-fit: cover;
     }
     #main #hotdeal .hd-products .swiper-wrapper .swiper-slide .img>img {
         height: 100%;
@@ -1508,6 +1552,8 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #main #about .wrapper img {
         flex: 1;
+        height: auto;
+        object-fit: cover;
     }
     #main #about .wrapper .text {
         flex: 1;
@@ -1541,6 +1587,7 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     #cat_banner img {
         height: 450px;
         width: 100%;
+        object-fit: cover;
     }
     #second-main .wrapper #content {
         flex: 5;
@@ -1559,11 +1606,12 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     #second-main .wrapper #content .post-wrapper .items img {
         width: 100%;
         height: 360px;
+        object-fit: cover;
     }
     #second-main .wrapper #sidebar {
-        flex: 1;
         padding: 20px 24px 0;
         box-sizing: border-box;
+        width: 416px;
     }
     #second-main .wrapper #content .products .cat-items {
         width: 24%;
@@ -1573,6 +1621,8 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #second-main .wrapper #content .products .cat-items img {
         width: 100%;
+        height: auto;
+        object-fit: cover;
     }
     #second-main .wrapper #content .products .cat-items .info-products h2 {
         margin: 10px 0;
@@ -1649,6 +1699,8 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #top #navi .wrapper #logo img {
         width: 136.79px;
+        height: auto;
+        object-fit: cover;
     }
     #top #navi .wrapper #mobile-icon-menu {
         color: #fff;
@@ -1680,6 +1732,8 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #main #special .wrapper div img {
         width: 100%;
+        height: auto;
+        object-fit: cover;
     }
     #main #hotdeal .wrapper {
         flex-direction: column;
@@ -1691,6 +1745,8 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #main #hotdeal .wrapper .hd-banner img {
         border-radius: 10px;
+        height: auto;
+        object-fit: cover;
     }
     #main #hotdeal .wrapper .hd-products {
         margin-left: 10px;
@@ -1711,6 +1767,7 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #main #hotdeal .hd-products .swiper-wrapper .swiper-slide .img img {
         height: 100%;
+        object-fit: cover;
     }
     #main #hotdeal .hd-products .swiper-wrapper .swiper-slide {
         height: 75%;
@@ -1783,6 +1840,7 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     #second-main .wrapper #content .post-wrapper .items img {
         width: 100%;
         height: 360px;
+        object-fit: cover;
     }
     #second-main .wrapper #content #detail .maindetail {
         flex-direction: column;
@@ -1805,6 +1863,8 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #second-main .wrapper #content .products .cat-items img {
         width: 100%;
+        height: auto;
+        object-fit: cover;
     }
     #second-main .wrapper #content .products .cat-items .info-products h2 {
         margin: 10px 0;
@@ -1820,6 +1880,8 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     footer #info .wrapper .col img {
         width: 70%;
         padding: 20px;
+        height: auto;
+        object-fit: cover;
     }
     #more-info .wrapper .products {
         padding: 20px;
@@ -1857,6 +1919,7 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     .gia img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -1890,6 +1953,8 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #top #navi .wrapper #logo img {
         width: 68.39px;
+        height: auto;
+        object-fit: cover;
     }
     #top #navi .wrapper #mobile-icon-menu {
         color: #fff;
@@ -1906,6 +1971,7 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #top #banner img {
         height: 220px;
+        object-fit: cover;
     }
     #quick-menu .wrapper ul li a img {
         width: 50px;
@@ -1931,6 +1997,7 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #main #special .wrapper div img {
         height: 100%;
+        object-fit: cover;
     }
     #main #special .wrapper div {
         flex: 1;
@@ -1959,6 +2026,8 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     #main #hotdeal .wrapper .hd-banner img {
         width: 100%;
         border-radius: 20px;
+        height: auto;
+        object-fit: cover;
     }
     #main #hotdeal .wrapper .hd-products {
         margin-left: 10px;
@@ -1975,6 +2044,7 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #main #hotdeal .hd-products .swiper-wrapper .swiper-slide .img img {
         height: 100%;
+        object-fit: cover;
     }
     #main #hotdeal .hd-products .swiper-wrapper .swiper-slide {
         height: 98%;
@@ -1998,6 +2068,8 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #main #about .wrapper img {
         width: 100%;
+        height: auto;
+        object-fit: cover;
     }
     #main #show-product .cat-products {
         height: 300px;
@@ -2027,6 +2099,8 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #main #show-product .wrapper .mobile-products .mobile-products-wrapper .swiper img {
         width: 100%;
+        height: auto;
+        object-fit: cover;
     }
     #main #show-product .wrapper .mobile-products .mobile-products-wrapper .swiper .onsale {
         position: absolute;
@@ -2055,6 +2129,7 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     }
     #cat_banner img {
         height: 220px;
+        object-fit: cover;
     }
     #second-main .wrapper h1 {
         margin: 10px;
@@ -2098,6 +2173,7 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     #second-main .wrapper #content .products .cat-items img {
         width: 100%;
         height: 180px;
+        object-fit: cover;
     }
     #second-main .wrapper #content .products .cat-items .info-products i {
         font-size: 10px;
@@ -2116,6 +2192,8 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     footer #info .wrapper .col img {
         width: 70%;
         padding: 10px;
+        height: auto;
+        object-fit: cover;
     }
     #more-info .wrapper {
         flex-direction: column;
@@ -2161,10 +2239,12 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     .wp-caption img {
         width: 100%;
         height: 335px !important;
+        object-fit: cover;
     }
     .main-content img {
         width: 100%;
         height: 335px;
+        object-fit: cover;
     }
     .gia {
         width: 90%;
@@ -2173,6 +2253,7 @@ footer #bottom .wrapper .payment-icons .payment-icon svg {
     .gia img {
         width: 100%;
         height: auto;
+        object-fit: cover;
     }
     /* end blog image */
 }

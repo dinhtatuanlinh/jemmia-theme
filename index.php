@@ -16,11 +16,14 @@ $upload_dir = wp_upload_dir();
         <div class="wrapper">
 
             <div>
-                
-                <a href="<?php echo home_url(); ?>/san-pham-ban-chay"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/sp-ban-chay.jpg" alt=""></a>
+
+                <a href="<?php echo home_url(); ?>/san-pham-ban-chay"><img
+                        src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/sp-ban-chay.jpg" alt=""></a>
             </div>
-            <div><a href="<?php echo home_url(); ?>/san-pham-moi"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/sp-moi.jpg" alt=""></a></div>
-            <div><a href="<?php echo home_url(); ?>/uu-dai-trang-suc-vang"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/flash-sale.jpg" alt=""></a></div>
+            <div><a href="<?php echo home_url(); ?>/san-pham-moi"><img
+                        src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/sp-moi.jpg" alt=""></a></div>
+            <div><a href="<?php echo home_url(); ?>/uu-dai-trang-suc-vang"><img
+                        src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/flash-sale.jpg" alt=""></a></div>
         </div>
     </div>
 
@@ -92,7 +95,7 @@ $upload_dir = wp_upload_dir();
                 </li>
                 <li>
 
-                <?php
+                    <?php
                         $terms = 'vo-nhan-kim-cuong-tu-nhien';
                         $category = get_term_by('slug', $terms, 'product_cat');
                         $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true );
@@ -110,8 +113,10 @@ $upload_dir = wp_upload_dir();
     <div id="hotdeal">
         <div class="wrapper">
             <div class="hd-banner">
-                <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/HD 320x415.jpg" alt="hot deal" class="mobile-hide tablet-hide">
-                <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/HD 410x170.jpg" alt="hot deal" class=" desktop-hide">
+                <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/HD 320x415.jpg" alt="hot deal"
+                    class="mobile-hide tablet-hide">
+                <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/HD 410x170.jpg" alt="hot deal"
+                    class=" desktop-hide">
             </div>
             <div class="hd-products">
 
@@ -138,14 +143,15 @@ $upload_dir = wp_upload_dir();
                             
                         ?>
                         <div class="img">
-                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></a>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>"
+                                    alt="<?php the_title(); ?>"></a>
                         </div>
                         <div class="info-products">
                             <a href="<?php the_permalink(); ?>">
                                 <strong><?php the_title(); ?></strong>
-                                    
+
                                 <div class="price">
-                                <?php echo $product->get_price_html(); ?>
+                                    <?php echo $product->get_price_html(); ?>
 
                                 </div>
                             </a>
@@ -158,7 +164,7 @@ $upload_dir = wp_upload_dir();
                             // do_action( 'linh_addtocart');
                         ?>
                             <!-- <div class="advice"><img src="<?php //echo JEMMIA_THEME_URL_ICON; ?>/PikPng.com_new-icon-png_2592784.png" alt=""></div> -->
-                            
+
                         </div>
                     </div>
                     <?php
@@ -175,9 +181,9 @@ $upload_dir = wp_upload_dir();
         </div>
     </div>
     <div id="show-product">
-        
+
         <div class="wrapper">
-        <?php
+            <?php
             // get hotdeal
             $terms = 'nhan-nam';
             $args = array(
@@ -205,10 +211,12 @@ $upload_dir = wp_upload_dir();
 
         ?>
             <div class="prds-banner">
-                
+
                 <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/product-banner_1200x500_nhan-nam.jpg" alt="">
             </div>
-            <a href="<?php echo get_term_link( $category ); ?>"><h2>nhẫn nam</h2></a>
+            <a href="<?php echo get_term_link( $category ); ?>">
+                <h2>nhẫn nam</h2>
+            </a>
             <hr>
             <div class="cat-products mobile-hide">
                 <div class="swiper-wrapper">
@@ -223,16 +231,17 @@ $upload_dir = wp_upload_dir();
                             do_action('woocommerce_sale_flash');
                             
                         ?>
-                        
+
                         <div class="img">
-                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></a>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>"
+                                    alt="<?php the_title(); ?>"></a>
                         </div>
                         <div class="info-products">
                             <a href="<?php the_permalink(); ?>">
                                 <strong><?php the_title(); ?></strong>
-                                    
+
                                 <div class="price">
-                                <?php echo $product->get_price_html(); ?>
+                                    <?php echo $product->get_price_html(); ?>
                                 </div>
                             </a>
                             <?php
@@ -269,16 +278,17 @@ $upload_dir = wp_upload_dir();
                             do_action('woocommerce_sale_flash');
                             
                         ?>
-                        
+
                         <div class="img">
-                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></a>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>"
+                                    alt="<?php the_title(); ?>"></a>
                         </div>
                         <div class="info-products">
                             <a href="<?php the_permalink(); ?>">
                                 <strong><?php the_title(); ?></strong>
-                                    
+
                                 <div class="price">
-                                <?php echo $product->get_price_html(); ?>
+                                    <?php echo $product->get_price_html(); ?>
                                 </div>
                             </a>
                             <?php
@@ -304,7 +314,7 @@ $upload_dir = wp_upload_dir();
             </div>
         </div>
         <div class="wrapper">
-        <?php
+            <?php
             // get hotdeal
             $terms = 'nhan-nu';
             $args = array(
@@ -330,9 +340,11 @@ $upload_dir = wp_upload_dir();
 
         ?>
             <div class="prds-banner">
-            <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/product-banner_1200x500_nhan-nu.jpg" alt="">
+                <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/product-banner_1200x500_nhan-nu.jpg" alt="">
             </div>
-            <a href="<?php echo get_term_link( $category ); ?>"><h2>nhẫn nữ</h2></a>
+            <a href="<?php echo get_term_link( $category ); ?>">
+                <h2>nhẫn nữ</h2>
+            </a>
             <hr>
             <div class="cat-products mobile-hide">
                 <div class="swiper-wrapper">
@@ -343,19 +355,20 @@ $upload_dir = wp_upload_dir();
                             $product = wc_get_product( get_the_ID() ); /* get the WC_Product Object */
                     ?>
                     <div class="swiper-slide">
-                    <?php
+                        <?php
                             do_action('woocommerce_sale_flash');
                             
                         ?>
                         <div class="img">
-                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></a>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>"
+                                    alt="<?php the_title(); ?>"></a>
                         </div>
                         <div class="info-products">
                             <a href="<?php the_permalink(); ?>">
                                 <strong><?php the_title(); ?></strong>
-                                    
+
                                 <div class="price">
-                                <?php echo $product->get_price_html(); ?>
+                                    <?php echo $product->get_price_html(); ?>
                                 </div>
                             </a>
                             <?php
@@ -392,16 +405,17 @@ $upload_dir = wp_upload_dir();
                             do_action('woocommerce_sale_flash');
                             
                         ?>
-                        
+
                         <div class="img">
-                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></a>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>"
+                                    alt="<?php the_title(); ?>"></a>
                         </div>
                         <div class="info-products">
                             <a href="<?php the_permalink(); ?>">
                                 <strong><?php the_title(); ?></strong>
-                                    
+
                                 <div class="price">
-                                <?php echo $product->get_price_html(); ?>
+                                    <?php echo $product->get_price_html(); ?>
                                 </div>
                             </a>
                             <?php
@@ -453,10 +467,12 @@ $upload_dir = wp_upload_dir();
 
             ?>
             <div class="prds-banner">
-                
+
                 <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/product-banner_1200x500_nhan-doi.jpg" alt="">
             </div>
-            <a href="<?php echo get_term_link( $category ); ?>"><h2>nhẫn cưới</h2></a>
+            <a href="<?php echo get_term_link( $category ); ?>">
+                <h2>nhẫn cưới</h2>
+            </a>
             <hr>
             <div class="cat-products mobile-hide">
                 <div class="swiper-wrapper">
@@ -467,19 +483,20 @@ $upload_dir = wp_upload_dir();
                             $product = wc_get_product( get_the_ID() ); /* get the WC_Product Object */
                     ?>
                     <div class="swiper-slide">
-                    <?php
+                        <?php
                             do_action('woocommerce_sale_flash');
                             
                         ?>
                         <div class="img">
-                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></a>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>"
+                                    alt="<?php the_title(); ?>"></a>
                         </div>
                         <div class="info-products">
                             <a href="<?php the_permalink(); ?>">
                                 <strong><?php the_title(); ?></strong>
-                                    
+
                                 <div class="price">
-                                <?php echo $product->get_price_html(); ?>
+                                    <?php echo $product->get_price_html(); ?>
                                 </div>
                             </a>
                             <?php
@@ -517,16 +534,17 @@ $upload_dir = wp_upload_dir();
                             do_action('woocommerce_sale_flash');
                             
                         ?>
-                        
+
                         <div class="img">
-                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></a>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>"
+                                    alt="<?php the_title(); ?>"></a>
                         </div>
                         <div class="info-products">
                             <a href="<?php the_permalink(); ?>">
                                 <strong><?php the_title(); ?></strong>
-                                    
+
                                 <div class="price">
-                                <?php echo $product->get_price_html(); ?>
+                                    <?php echo $product->get_price_html(); ?>
                                 </div>
                             </a>
                             <?php
@@ -552,7 +570,7 @@ $upload_dir = wp_upload_dir();
             </div>
         </div>
         <div class="wrapper">
-        <?php
+            <?php
             // get hotdeal
             $terms = 'bong-tai';
             $args = array(
@@ -580,7 +598,9 @@ $upload_dir = wp_upload_dir();
             <div class="prds-banner">
                 <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/product-banner_1200x500_hoa-tai.jpg" alt="">
             </div>
-            <a href="<?php echo get_term_link( $category ); ?>"><h2>bông tai</h2></a>
+            <a href="<?php echo get_term_link( $category ); ?>">
+                <h2>bông tai</h2>
+            </a>
             <hr>
             <div class="cat-products mobile-hide">
                 <div class="swiper-wrapper">
@@ -591,19 +611,20 @@ $upload_dir = wp_upload_dir();
                             $product = wc_get_product( get_the_ID() ); /* get the WC_Product Object */
                     ?>
                     <div class="swiper-slide">
-                    <?php
+                        <?php
                             do_action('woocommerce_sale_flash');
                             
                         ?>
                         <div class="img">
-                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></a>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>"
+                                    alt="<?php the_title(); ?>"></a>
                         </div>
                         <div class="info-products">
                             <a href="<?php the_permalink(); ?>">
                                 <strong><?php the_title(); ?></strong>
-                                    
+
                                 <div class="price">
-                                <?php echo $product->get_price_html(); ?>
+                                    <?php echo $product->get_price_html(); ?>
                                 </div>
                             </a>
                             <?php
@@ -640,16 +661,17 @@ $upload_dir = wp_upload_dir();
                             do_action('woocommerce_sale_flash');
                             
                         ?>
-                        
+
                         <div class="img">
-                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></a>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>"
+                                    alt="<?php the_title(); ?>"></a>
                         </div>
                         <div class="info-products">
                             <a href="<?php the_permalink(); ?>">
                                 <strong><?php the_title(); ?></strong>
-                                    
+
                                 <div class="price">
-                                <?php echo $product->get_price_html(); ?>
+                                    <?php echo $product->get_price_html(); ?>
                                 </div>
                             </a>
                             <?php
@@ -675,7 +697,7 @@ $upload_dir = wp_upload_dir();
             </div>
         </div>
         <div class="wrapper">
-        <?php
+            <?php
             // get hotdeal
             $terms = 'kim-cuong';
             $args = array(
@@ -703,7 +725,9 @@ $upload_dir = wp_upload_dir();
             <div class="prds-banner">
                 <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/product-banner_1200x500_kim-cuong.jpg" alt="">
             </div>
-            <a href="<?php echo get_term_link( $category ); ?>"><h2>kim cương</h2></a>
+            <a href="<?php echo get_term_link( $category ); ?>">
+                <h2>kim cương</h2>
+            </a>
             <hr>
             <div class="cat-products mobile-hide">
                 <div class="swiper-wrapper">
@@ -714,21 +738,22 @@ $upload_dir = wp_upload_dir();
                             $product = wc_get_product( get_the_ID() ); /* get the WC_Product Object */
                     ?>
                     <div class="swiper-slide">
-                        
-                            
-                    <?php
+
+
+                        <?php
                             do_action('woocommerce_sale_flash');
                             
                         ?>
                         <div class="img">
-                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></a>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>"
+                                    alt="<?php the_title(); ?>"></a>
                         </div>
                         <div class="info-products">
                             <a href="<?php the_permalink(); ?>">
                                 <strong><?php the_title(); ?></strong>
-                                    
+
                                 <div class="price">
-                                <?php echo $product->get_price_html(); ?>
+                                    <?php echo $product->get_price_html(); ?>
                                 </div>
                             </a>
                             <?php
@@ -766,16 +791,17 @@ $upload_dir = wp_upload_dir();
                             
                             
                         ?>
-                        
+
                         <div class="img">
-                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"></a>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php  echo get_the_post_thumbnail_url(); ?>"
+                                    alt="<?php the_title(); ?>"></a>
                         </div>
                         <div class="info-products">
                             <a href="<?php the_permalink(); ?>">
                                 <strong><?php the_title(); ?></strong>
-                                    
+
                                 <div class="price">
-                                <?php echo $product->get_price_html(); ?>
+                                    <?php echo $product->get_price_html(); ?>
                                 </div>
                             </a>
                             <?php
@@ -831,8 +857,11 @@ $upload_dir = wp_upload_dir();
             <div class="text">
                 <strong>về chúng tôi</strong>
                 <label>câu chuyện jemmia</label>
-                <p>JEMMIA tin rằng trong mỗi viên kim cương đều chứa đựng những ý nghĩa vô cùng to lớn về phong thủy vì kim cương là loại đá cứng nhất đồng nghĩa mang năng lượng nhiều nhất trong tự nhiên. Trang sức kim cương tại JEMMIA được thiết kế
-                    dựa theo phong cách tinh tế và hiện đại từ đất nước luôn đi đầu về phong cách thời trang là Hàn Quốc …</p>
+                <p>JEMMIA tin rằng trong mỗi viên kim cương đều chứa đựng những ý nghĩa vô cùng to lớn về phong thủy vì
+                    kim cương là loại đá cứng nhất đồng nghĩa mang năng lượng nhiều nhất trong tự nhiên. Trang sức kim
+                    cương tại JEMMIA được thiết kế
+                    dựa theo phong cách tinh tế và hiện đại từ đất nước luôn đi đầu về phong cách thời trang là Hàn Quốc
+                    …</p>
             </div>
 
         </div>
@@ -862,18 +891,19 @@ $upload_dir = wp_upload_dir();
                                 setup_postdata( $blog );
                                 $author_id = $blog->post_author;
                                 ?>
-                                <div class="swiper-slide">
-                                    
-                                    <a href="<?php echo get_permalink( $blog->ID); ?>">
-                                        <img src="<?php echo get_the_post_thumbnail_url($blog->ID,'full'); ?>" alt="<?php echo $blog->post_title; ?>">
-                                        <div class="blog-title"><?php echo $blog->post_title; ?></div>
-                                        <!-- <div class="date">Đăng vào: <?php //echo explode(' ', $blog->post_date)[0] ; ?></div>
-                                        <div class="author">Bởi: <?php //the_author_meta( 'user_nicename' , $author_id ); ?> </div> -->
-                                        <p class="short"><?php echo get_the_excerpt($blog->ID); ?></p>
-                                    </a>
+                    <div class="swiper-slide">
 
-                                </div>
-                                <?php
+                        <a href="<?php echo get_permalink( $blog->ID); ?>">
+                            <img src="<?php echo get_the_post_thumbnail_url($blog->ID,'full'); ?>"
+                                alt="<?php echo $blog->post_title; ?>">
+                            <div class="blog-title"><?php echo $blog->post_title; ?></div>
+                            <!-- <div class="date">Đăng vào: <?php //echo explode(' ', $blog->post_date)[0] ; ?></div>
+                                        <div class="author">Bởi: <?php //the_author_meta( 'user_nicename' , $author_id ); ?> </div> -->
+                            <p class="short"><?php echo get_the_excerpt($blog->ID); ?></p>
+                        </a>
+
+                    </div>
+                    <?php
                             }
                             wp_reset_postdata();
                         }
@@ -887,4 +917,3 @@ $upload_dir = wp_upload_dir();
 
 get_footer(); 
 ?>
-    
