@@ -18,7 +18,14 @@ function get_new_img_url($imgUrl, $width = 0, $heigt = 0 ,	$suffixes = '-dttl-')
 
     //Tạo tên mới cho hình ảnh dựa trên tên cũ
     $tmpFileName = explode('.', $currentName);
-    $newFileName = $tmpFileName[0] . $suffixes . '.' . $tmpFileName[1];
+    // ======================
+    // fix tên ảnh có dấu chấm
+    if ( count($tmpFileName) == 3){
+        $newFileName = $tmpFileName[0] . $tmpFileName[1] . $suffixes . '.' . $tmpFileName[2];
+    }else{
+        $newFileName = $tmpFileName[0] . $suffixes . '.' . $tmpFileName[1];
+    }
+    
 
     //Chuyển từ đường dẫn URL sang PATH
     $tmp 	= explode('/wp-content/', $imgUrl);
@@ -38,6 +45,7 @@ function get_new_img_url($imgUrl, $width = 0, $heigt = 0 ,	$suffixes = '-dttl-')
 
     return $newImgUrl;
 }
+
 //CODE LAY LUOT XEM
 function getPostViews($postID){
     $count_key = 'post_views_count';

@@ -36,6 +36,28 @@ do_action( 'woocommerce_before_main_content' );
 ?>
 
 	<header class="woocommerce-products-header">
+		<?php
+		if(!isset($_GET['swoof'])){
+		$category = get_queried_object(); // this is for getting the parent category on archive or any place the category object is called.
+
+		$categories=get_categories(
+								array( //'child_of' => $category->term_id,
+									  'parent'  => $category->term_id,
+										'taxonomy' => 'product_cat',
+										'hide_empty' => false )
+										); 
+ 		//echo '<pre style="color: #fff">';
+ //print_r($categories);
+ //echo '</pre>';
+		?>
+		<div class="childCats">
+			<?php foreach( $categories as $catItem ) { ?>
+
+			<a class="<?php echo $catItem->slug; ?>" href="<?php echo get_term_link($catItem->cat_ID); ?>"><?php echo $catItem->name; ?></a>
+        
+			<?php } ?>
+		</div>
+		<?php }; ?>
 		<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 			<h1 class="woocommerce-products-header__title page-title cattitle"><?php woocommerce_page_title(); ?></h1>
 		<?php endif; ?>
@@ -51,6 +73,17 @@ do_action( 'woocommerce_before_main_content' );
 
 		?>
 	</header>
+<?php
+$attribute_names = $_POST['attribute_names'];
+
+
+        $attribute_values = $_POST['attribute_values'];
+        echo '<pre style="color: #000">';
+        print_r($attribute_names);
+        print_r($attribute_values);
+        echo '</pre>';
+?>
+
 	<?php
 	if ( woocommerce_product_loop() ) {
 		

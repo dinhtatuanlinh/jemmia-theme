@@ -27,12 +27,14 @@ echo wc_get_stock_html( $product ); // WPCS: XSS ok.
 
 if ( $product->is_in_stock() ) : ?>
 
-	<?php do_action( 'woocommerce_before_add_to_cart_form' ); ?>
+<?php do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
-	<form class="cart" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" method="post" enctype='multipart/form-data'>
-		<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
+<form class="cart"
+    action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>"
+    method="post" enctype='multipart/form-data'>
+    <?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
-		<?php
+    <?php
 		do_action( 'woocommerce_before_add_to_cart_quantity' );
 
 		woocommerce_quantity_input(
@@ -45,15 +47,23 @@ if ( $product->is_in_stock() ) : ?>
 
 		do_action( 'woocommerce_after_add_to_cart_quantity' );
 		?>
-		
-		<div id="cart_button">
-			<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
-			<a class="messenger" href="https://m.me/745699598919099?ref=be176aa1-a0b8-48da-aafb-655487f695b7"><img src="<?php echo JEMMIA_THEME_URL_ICON; ?>/PikPng.com_new-icon-png_2592784.png" alt=""></a>
-		</div>
 
-		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
-	</form>
+    <div id="cart_button">
+        
 
-	<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
+        <button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>"
+            class="single_add_to_cart_button button alt animated-button1"><span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <?php echo esc_html( $product->single_add_to_cart_text() ); ?>
+        </button>
+
+    </div>
+
+    <?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
+</form>
+
+<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
 
 <?php endif; ?>

@@ -18,7 +18,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-echo wc_get_loop_prop( 'total_pages' );
+// echo wc_get_loop_prop( 'total_pages' ); // in tổng só trang
 $total   = isset( $total ) ? $total : wc_get_loop_prop( 'total_pages' );
 $current = isset( $current ) ? $current : wc_get_loop_prop( 'current_page' );
 $base    = isset( $base ) ? $base : esc_url_raw( str_replace( 999999999, '%#%', remove_query_arg( 'add-to-cart', get_pagenum_link( 999999999, false ) ) ) );
@@ -42,8 +42,8 @@ if ( $total <= 1 ) {
 				'prev_text' => '&larr;',
 				'next_text' => '&rarr;',
 				'type'      => 'list',
-				'end_size'  => 3,
-				'mid_size'  => 3,
+				'end_size'  => 1,
+				'mid_size'  => 1,
 			)
 		)
 	);

@@ -10,6 +10,11 @@ function openmenu() {
 
         duration: 1
     });
+    gsap.fromTo("#closeMobileMenu", {
+        display: 'none'
+    }, {
+        display: 'block',
+    });
 }
 
 function closemenu() {
@@ -23,5 +28,10 @@ function closemenu() {
         left: -410,
 
         duration: 1
+    });
+    gsap.fromTo("#closeMobileMenu", {
+        display: 'block'
+    }, {
+        display: 'none',
     });
 }

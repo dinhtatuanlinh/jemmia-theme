@@ -21,14 +21,45 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! empty( $breadcrumb ) ) {
-
-	echo $wrap_before;
-
+	$newbreadcrumb = array();
 	foreach ( $breadcrumb as $key => $crumb ) {
+		if($key < 2){
+			array_push($newbreadcrumb, $crumb);
+		}
+		if($key> count($breadcrumb) - 3){
+			array_push($newbreadcrumb, $crumb);
+		}
+	}
+// 	echo '<pre style="color: #000">';
+// 	print_r($newbreadcrumb);
+// echo '</pre>';
+	echo $wrap_before;
+	// for($i = 0; $i<count($breadcrumb); $i++){
+	// 	echo $before;
+	// 	switch ($i) {
+	// 		case 0:
+	// 			echo esc_html( $crumb[0] );
+	// 		  break;
+	// 		case count($breadcrumb)-2:
+	// 			echo '<a href="' . esc_url( $crumb[count($breadcrumb)-2][1] ) . '">' . esc_html( $crumb[count($breadcrumb)-2][0] ) . '</a>';
+	// 		  break;
+	// 		case count($breadcrumb)-1:
+	// 			echo '<a href="' . esc_url( $crumb[count($breadcrumb)-1][1] ) . '">' . esc_html( $crumb[count($breadcrumb)-1][0] ) . '</a>';
+	// 		  break;
+	// 		default:
+	// 			echo "...";
+	// 	  }
+	// 	  echo $after;
+	// 	if ( sizeof( $breadcrumb ) !== $i + 1 ) {
+	// 		echo $delimiter;
+	// 	}
+	// }
+	
+	foreach ( $newbreadcrumb as $key => $crumb ) {
 
 		echo $before;
 
-		if ( ! empty( $crumb[1] ) && sizeof( $breadcrumb ) !== $key + 1 ) {
+		if ( ! empty( $crumb[1] ) && sizeof( $newbreadcrumb ) !== $key + 1 && $key ) {
 			echo '<a href="' . esc_url( $crumb[1] ) . '">' . esc_html( $crumb[0] ) . '</a>';
 		} else {
 			echo esc_html( $crumb[0] );
@@ -36,7 +67,7 @@ if ( ! empty( $breadcrumb ) ) {
 
 		echo $after;
 
-		if ( sizeof( $breadcrumb ) !== $key + 1 ) {
+		if ( sizeof( $newbreadcrumb ) !== $key + 1 ) {
 			echo $delimiter;
 		}
 	}

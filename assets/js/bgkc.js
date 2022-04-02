@@ -2,6 +2,9 @@ var all = document.getElementsByClassName('all');
 var bgkc_tab = document.getElementsByClassName('bgkc-tab');
 
 function showbgkc(tab) {
+	if(typeof omktAddTag === "function"){
+        omktAddTag('Xem bảng giá' + tab)
+    }
     if (tab === 'all') {
         for (i = 0; i < bgkc_tab.length; i++) {
             bgkc_tab[i].classList.remove("active");
@@ -19,6 +22,7 @@ function showbgkc(tab) {
 
         })
     } else {
+		
         for (i = 0; i < bgkc_tab.length; i++) {
             bgkc_tab[i].classList.remove("active");
         }
@@ -40,7 +44,11 @@ function showbgkc(tab) {
 }
 var bgkcUrl = window.location.href;
 
-if (bgkcUrl === 'https://jemmia.vn/bang-gia-si-kim-cuong-gia' || bgkcUrl === 'https://jemmia.vn/bang-gia-kim-cuong-tu-nhien') {
-
+if (bgkcUrl === 'https://jemmia.vn/bang-gia-si-kim-cuong-gia') {
     showbgkc('5ly4');
+}
+if (bgkcUrl === 'https://jemmia.vn/bang-gia-kim-cuong-tu-nhien') {
+	
+    showbgkc('5ly4');
+
 }

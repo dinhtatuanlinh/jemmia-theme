@@ -1,0 +1,111 @@
+@media only screen and (min-width: 601px) {
+    #cart-dttl img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    #cart-dttl .cart-contents-count {
+        position: absolute;
+        right: -7px;
+        top: 2px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        font-weight: 600;
+        font-size: 9px;
+        font-family: "Roboto","Arial",sans-serif;
+    }
+    #cart-dttl{
+        position: fixed;
+        bottom: 10px;
+        right: 26px !important;
+        z-index: 100;
+        border-radius: 50% 50%;
+        background: #fff;
+        padding: 10px;
+        display: flex;
+        border: 1px solid var(--main-bg-color);
+    }
+    #fb-root iframe:first-child{
+        bottom: 73px !important;
+    }
+
+
+}
+#top {
+    height: 60px;
+    width: 100%;
+    background-color: #061629;
+    display: flex;
+    justify-content: center;
+}
+#top #logo{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#top #logo a img{
+    width: 100%;
+    
+}
+#top #logo #shinning {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    z-index: 20;
+    -webkit-animation: 3s shinning linear infinite;
+    animation: 2s shinning ease-in infinite;
+    top: -33px;
+    right: -26px;
+}
+@keyframes shinning {
+    0% {
+        -ms-transform: scale(0.4, 0.4);
+        /* IE 9 */
+        transform: scale(0.4, 0.4);
+    }
+    10% {
+        -ms-transform: scale(0.5, 0.5);
+        /* IE 9 */
+        transform: scale(0.5, 0.5);
+    }
+    20% {
+        -ms-transform: scale(0.6, 0.6);
+        /* IE 9 */
+        transform: scale(0.6, 0.6);
+    }
+    40% {
+        -ms-transform: scale(0.7, 0.7);
+        /* IE 9 */
+        transform: scale(0.7, 0.7);
+    }
+    50% {
+        -ms-transform: scale(1.1, 1.1);
+        /* IE 9 */
+        transform: scale(1.1, 1.1);
+    }
+    60% {
+        -ms-transform: scale(0.7, 0.7);
+        /* IE 9 */
+        transform: scale(0.7, 0.7);
+    }
+    80% {
+        -ms-transform: scale(0.6, 0.6);
+        /* IE 9 */
+        transform: scale(0.6, 0.6);
+    }
+    90% {
+        -ms-transform: scale(0.5, 0.5);
+        /* IE 9 */
+        transform: scale(0.5, 0.5);
+    }
+    100% {
+        -ms-transform: scale(0.4, 0.4);
+        /* IE 9 */
+        transform: scale(0.4, 0.4);
+    }
+}

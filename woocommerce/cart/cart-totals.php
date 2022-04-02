@@ -19,7 +19,6 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 <div class="cart_totals <?php echo ( WC()->customer->has_calculated_shipping() ) ? 'calculated_shipping' : ''; ?>">
-
 	<?php do_action( 'woocommerce_before_cart_totals' ); ?>
 
 	<h2><?php esc_html_e( 'Cart totals', 'woocommerce' ); ?></h2>
@@ -85,6 +84,7 @@ defined( 'ABSPATH' ) || exit;
 				?>
 				<tr class="tax-total">
 					<th><?php echo esc_html( WC()->countries->tax_or_vat() ) . $estimated_text; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></th>
+					
 					<td data-title="<?php echo esc_attr( WC()->countries->tax_or_vat() ); ?>"><?php wc_cart_totals_taxes_total_html(); ?></td>
 				</tr>
 				<?php
@@ -95,7 +95,8 @@ defined( 'ABSPATH' ) || exit;
 		<?php do_action( 'woocommerce_cart_totals_before_order_total' ); ?>
 
 		<tr class="order-total">
-			<th><?php esc_html_e( 'Total', 'woocommerce' ); ?></th>
+			<!-- <th><?php esc_html_e( 'Total', 'woocommerce' ); ?></th> -->
+			<th>Thanh toán trước 30% giá của sản phẩm</th>
 			<td data-title="<?php esc_attr_e( 'Total', 'woocommerce' ); ?>"><?php wc_cart_totals_order_total_html(); ?></td>
 		</tr>
 

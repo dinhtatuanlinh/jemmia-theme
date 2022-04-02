@@ -1,4 +1,5 @@
 <a name='gotop'></a>
+<div id="closeMobileMenu" onclick='closemenu()'></div>
 <div id="mobile-menu">
     <div class="close" onclick='closemenu()'><i class="fa fa-times" aria-hidden="true"></i>
     </div>
@@ -27,7 +28,8 @@
             wp_nav_menu( $args );
         }
     ?>
-        <!-- <ul>
+    <div class="close2" onclick='closemenu()'><i class="fa fa-times" aria-hidden="true"></i></div>
+    <!-- <ul>
             <li><a href="">Trang chủ</a></li>
             <li>
                 <a href="">jemmia diamond</a>
@@ -100,23 +102,42 @@
             </li>
         </ul> -->
 </div>
-<div id="upper" name="upper">
-    <div class="wrapper">
-        <div class="slogan">jemmia trùm kim cương sỉ GIA</div>
-        <div class="phone icon"><img src="<?php echo JEMMIA_THEME_URL_ICON; ?>/phone.png" alt=""><label><a href="tel:0775 110 111">0838353333</a></label></div>
 
-    </div>
-</div>
 <div id="top">
-
+    <div id="upper" name="upper">
+        <div class="background_upper"></div>
+        <div class="wrapper">
+            <div class="slogan">jemmia kim cương siêu đỉnh - giá siêu sỉ</div>
+            <div class="phone"><img src="<?php echo JEMMIA_THEME_URL_ICON; ?>/phone.png" alt="">
+                <label>
+                    <a class="hotline" href="tel:0775 110 111">0838353333</a>
+                </label>
+            </div>
+        </div>
+    </div>
 
     <div id="navi">
         <div class="wrapper">
             <div id="mobile-icon-menu" class="desktop-hide" onclick="openmenu()">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </div>
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
             <div id="logo">
-                <a href="<?php echo get_home_url(); ?>"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/change-color-06.png" alt="jemmia"></a>
+                <!-- <img id="shinning" src="<?php //echo JEMMIA_THEME_URL_IMG; ?>/04.png" alt=""> -->
+                <a href="<?php echo get_home_url(); ?>"><img
+                        src="<?php echo JEMMIA_THEME_URL_IMG; ?>/LOGO.png" alt="jemmia"></a>
+            </div>
+            <div id="mobileCart">
+                <a href="<?php echo WC()->cart->get_cart_url(); ?>">
+                    <div class="desktop-hide">
+                        <?php // my_wc_cart_count fucntion
+
+                            do_action('linh_mobile_cart_icon');
+
+                        ?>
+                        <!-- <i class="fa fa-shopping-cart" aria-hidden="true"></i> -->
+
+                    </div>
+                </a>
             </div>
 
             <?php
@@ -144,7 +165,7 @@
                             wp_nav_menu( $args );
                         }
                     ?>
-                <!-- <nav class="tablet-hide mobile-hide">
+            <!-- <nav class="tablet-hide mobile-hide">
                     <ul>
                         <li><a href="<?php echo get_home_url(); ?>">Trang chủ</a></li>
                         <li>
@@ -224,6 +245,8 @@
                         </li>
                     </ul>
                 </nav> -->
-                
+                <div id="searchform" class="mobile-hide tablet-hide">
+                    <?php get_search_form();//kéo searchform vào ?>
+                </div>    
         </div>
     </div>

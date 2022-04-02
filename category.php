@@ -32,8 +32,7 @@ $upload_dir = wp_upload_dir();
                         <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                         <div class="infowrapper">
                             <div class="name"><?php the_title(); ?></div>
-                            <div class="date">Đăng vào: <?php the_date() ; ?></div>
-                            <div class="author">Bởi: <?php the_author(); ?> </div>
+                            <!-- <div class="date">Đăng vào: <?php the_date() ; ?></div> -->
                             <p><?php echo str_split(  $except, 100)[0]; ?></p>
                         </div>
                     </a>
@@ -44,22 +43,14 @@ $upload_dir = wp_upload_dir();
                 wp_reset_postdata();// reset lại đối tương wp_query
                 ?>
             </div>
-            <!-- <ul class="pagination">
-                <li><span class="button disabled">Prev</span></li>
-                <li><a href="#" class="page active">1</a></li>
-                <li><a href="#" class="page">2</a></li>
-                <li><a href="#" class="page">3</a></li>
-                <li><span>&hellip;</span></li>
-                <li><a href="#" class="page">8</a></li>
-                <li><a href="#" class="page">9</a></li>
-                <li><a href="#" class="page">10</a></li>
-                <li><a href="#" class="button">Next</a></li>
-            </ul> -->
+			            <?php the_posts_pagination(array(
+                'mid_size'  => 2,
+                'prev_text' => '&larr;',
+                'next_text' => '&rarr;',
+            )); ?>
             
         </div>
-        <?php
-            get_sidebar();
-        ?>
+
     </div>
 
 </div>
