@@ -2319,7 +2319,7 @@ td {
 }
 /* end shipping */
 .hotline {
-    border: 1px solid var(--main-bg-color);
+
     padding: 10px;
     font-size: 14px !important;
 }
@@ -3229,7 +3229,7 @@ td {
         padding: 0 10px;
     }
     .bgkc-row .bgkc-col:nth-child(1) {
-        flex: 0.5;
+        flex: 0.3;
     }
     .bgkc-row .bgkc-col:nth-child(2) {
         flex: 0.5;
@@ -3238,7 +3238,7 @@ td {
         flex: 0.7;
     }
     .bgkc-row .bgkc-col {
-        flex: 1;
+        flex: 0.8;
     }
     /* diamond education */
     .diamondEducation .title {

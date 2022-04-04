@@ -4,7 +4,7 @@
 }
 
 .icon {
-    font-family: diamonds;
+    font-family: diamonds !important;
     font-size: 4em;
     font-style: normal;
 }

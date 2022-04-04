@@ -44,8 +44,8 @@
                     <li><strong>TP.HCM: </strong><a rel="nofollow noopener" href="https://g.page/Jemmia" target="_blank" rel="noopener noreferrer">413 Huỳnh Văn
                             Bánh, Phường 11 , Quận Phú Nhuận, TP.HCM</a></li>
                     <li><strong>Hà Nội: </strong>63 Kim Mã, Quận Ba Đình , Hà Nội</li>
-                    <li><strong>Hotline: <a class="hotline" href="tel:0775110111">0775 110 111</a></strong></li>
-                    <li><strong>Góp ý kiến: <a href="tel:0838 353 333">0838 353 333</a></strong></li>
+                    <li><strong>Góp ý kiến: <a href="tel:0775110111">0775 110 111</a></strong></li>
+                    <li><strong>Hotline: <a class="hotline" href="tel:0838 353 333">0838 353 333</a></strong></li>
                     <li><strong>Thông tin doanh nghiệp: <a href="tel:0933982866">0933 982 866</a></strong></li>
                     <!-- <li>Đà Nẵng: 195 Nguyễn Hữu Thọ, Quận Hải Châu, TP.Đà Nẵng.</li> -->
                 </ul>
