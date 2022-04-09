@@ -2383,7 +2383,9 @@ td {
     font-size: 25px;
     color: red;
 }
-
+ins{
+    text-decoration: none;
+}
 @media only screen and (min-width: 601px) {
     .cartWrapper {
         display: flex;
