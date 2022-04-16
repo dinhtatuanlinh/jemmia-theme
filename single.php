@@ -326,14 +326,14 @@ $upload_dir = wp_upload_dir();
                         Jemmia Diamond - Trùm kim cương sỉ 
                     </a></p>
                     <p><a class="view-more-item d-flex mb-0" target="_parent"
-                        href="https://jemmia.vn/kim-cuong-vang">
+                        href="https://jemmia.vn/dau-la-dong-kim-cuong-ma-gioi-sieu-giau-hay-tich-tru">
 
-                        Kim cương màu đỉnh cao quyền lực
+                        Giới siêu giàu đầu tư kim cương gì?
                     </a></p>
                     <p><a class="view-more-item d-flex mb-0" target="_parent"
-                        href="https://jemmia.vn/ke-mao-danh-kim-cuong">
+                        href="https://jemmia.vn/5-ly-do-kim-cuong-se-tang-gia-manh-trong-tuong-lai">
 
-                        Moissanite kẻ mạo danh kim cương
+                        Kim cương có tăng giá không, vì sao?
                     </a></p>
                     <p><a class="view-more-item d-flex mb-0" target="_parent"
                         href="https://jemmia.vn/bo-suu-tap-nhan-nam-dang-cap">
