@@ -2,8 +2,8 @@
     <div class="swiper-container img-banner">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <a href="https://jemmia.vn/yeu-ban-than-nang-gia-tri"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/yeu-ban-than-nang-gia-tri.jpg" alt=""></a>
-                <!-- <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/MOISANITE.jpg" alt=""> -->
+                <!-- <a href="https://jemmia.vn/yeu-ban-than-nang-gia-tri"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/yeu-ban-than-nang-gia-tri.jpg" alt=""></a> -->
+                <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/KHAI_TRUONG.jpg" alt="">
             </div>
 
             <div class="swiper-slide">

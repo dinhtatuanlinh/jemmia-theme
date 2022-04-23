@@ -41,8 +41,7 @@
             <div class="col">
                 <h3>thông tin liên hệ</h3>
                 <ul>
-                    <li><strong>TP.HCM: </strong><a rel="nofollow noopener" href="https://g.page/Jemmia" target="_blank" rel="noopener noreferrer">413 Huỳnh Văn
-                            Bánh, Phường 11 , Quận Phú Nhuận, TP.HCM</a></li>
+                    <li><strong>TP.HCM: </strong><a rel="nofollow noopener" href="https://goo.gl/maps/KhA7M4nSk1P4DUpm9" target="_blank" rel="noopener noreferrer">72 Nguyễn Cư Trinh, P. Phạm Ngũ Lão, Quận 1, TP. Hồ Chí Minh</a></li>
                     <li><strong>Hà Nội: </strong>63 Kim Mã, Quận Ba Đình , Hà Nội</li>
                     <li><strong>Góp ý kiến: <a href="tel:0775110111">0775 110 111</a></strong></li>
                     <li><strong>Hotline: <a class="hotline" href="tel:0838 353 333">0838 353 333</a></strong></li>
@@ -63,7 +62,7 @@
             </div>
             <div class="col social">
             <div class="fb-page" data-href="https://www.facebook.com/JEMMIA.JEWELRY" data-tabs="timeline" data-width="250" data-height="220" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/JEMMIA.JEWELRY" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/JEMMIA.JEWELRY">Jemmia Diamond</a></blockquote></div>
-                <p class="x">Chứng nhận</p>
+                <p class="x"><b>Chứng nhận</b></p>
                 <a href='http://online.gov.vn/Home/WebDetails/76983' rel="nofollow noopener"><img alt=' ' title=' '
                         src='<?php echo JEMMIA_THEME_URL_ICON; ?>/logoSaleNoti.png' /></a>
             </div>
