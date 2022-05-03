@@ -1825,7 +1825,7 @@ footer .wrapper #bottom p {
 .bgkc-tab {
     width: 132px;
     height: 40px;
-    background-color: #06213c;
+    background-color: var(--main-bg-color);
     line-height: 40px;
     text-align: center;
     color: #fff;
@@ -2905,7 +2905,7 @@ ins{
         justify-content: space-evenly;
         width: 250px;
         height: 60px;
-        background-color: #09203a;
+        background-color: var(--main-bg-color);
         border-radius: 20px;
         align-items: center;
     }

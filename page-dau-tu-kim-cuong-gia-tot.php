@@ -15,9 +15,9 @@ $upload_dir = wp_upload_dir();
         <div class="wrapper bgkc">
             <div class="price_table">
 
-                <a class="items" href="https://jemmia.vn/bang-gia-moissanite">
+                <a class="items" href="https://jemmia.vn/bang-gia-kim-cuong-tu-nhien">
                     <img src="<?php echo JEMMIA_THEME_URL_ICON; ?>/2.png" alt="">
-                    <div>bảng giá moissanite</div>
+                    <div>bảng giá kim cương tự nhiên</div>
                 </a>
                 <a class="items" href="https://jemmia.vn/bang-gia-kim-cuong-vang">
                     <img src="<?php echo JEMMIA_THEME_URL_ICON; ?>/1.png" alt="">
