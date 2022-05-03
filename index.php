@@ -197,150 +197,7 @@ $upload_dir = wp_upload_dir();
         </div>
     </div>
     <div id="show-product">
-        <div class="wrapper">
-            <?php
-            // get hotdeal
-            $terms = 'nhan-nam';
-            
-                $args = array(
-                    'post_status' => 'publish',
-                    'post_type' => 'product',
-                    
-                    // 'term_id'       => 19 ,
-                    'tax_query' => array(
-                        'relation' => 'AND',
-                        array (
-                            'taxonomy' => 'product_cat',
-                            'field' => 'slug',
-                            'terms' => $terms,
-                        ),
-                        // array (
-                        //     'taxonomy' => 'product_tag',
-                        //     'field' => 'name',
-                        //     'terms' => 'white-bg',
-                        // )
-                    ),
-                    'posts_per_page' => 4,
-                    'orderby'    => 'date',
-                    'order'      => 'DESC',
-                    'hide_empty' => false,
-                );
-                $query = new WP_Query( $args );
-            $category = get_term_by('slug', $terms, 'product_cat');
-            ?>
-            <div class="prds-banner">
-                <img class="lazyload" data-src="<?php echo JEMMIA_THEME_URL_IMG; ?>/LO2-Nhan-Nam.jpg" alt="">
-            </div>
-            <a href="<?php echo get_term_link( $category ); ?>">
-                <h2>nhẫn nam</h2>
-            </a>
-            <div class="cat-products mobile-hide">
-                <div class="swiper-wrapper">
-                    <?php
-                        if ( $query->have_posts() ) :
-                            while ($query->have_posts()) : $query->the_post();//phải dùng vòng lặp while để lấy ra đúng bài được chọn
-                            $product = wc_get_product( get_the_ID() ); /* get the WC_Product Object */
-                    ?>
-                    <div class="swiper-slide">
-                        <div class="img">
-                            <?php do_action('woocommerce_sale_flash'); ?>
-                            <a class="link" href="<?php the_permalink(); ?>">
-                                <img class="lazyload" data-src="<?php  echo get_new_img_url(get_the_post_thumbnail_url(), 400, 400); ?>" alt="<?php the_title(); ?>">
-                            </a>
-                            <?php
-                                /**
-                                 * Hook: linh_addtocart.
-                                 *
-                                 * @hooked woocommerce_template_loop_add_to_cart - 5
-                                 */
-                                do_action( 'linh_addtocart');
-                            ?>
-                        </div>
-                        <div class="info-products">
-                            <a href="<?php the_permalink(); ?>">
-                                <strong><?php the_title(); ?></strong>
-                                <p><?php echo get_post_meta( $product->get_id(), 'code', true ); ?></p>
-                                <div class="price">
-                                    <?php echo $product->get_price_html(); ?>
-                                </div>
-                            </a>
-                            <?php
-                            /**
-                             * Hook: linh_addtocart.
-                             *
-                             * @hooked woocommerce_template_loop_add_to_cart - 5
-                             */
-                            // do_action( 'linh_addtocart');
-                            ?>
-                            <!-- <div class="advice"><img data-src="<?php //echo JEMMIA_THEME_URL_ICON; ?>/PikPng.com_new-icon-png_2592784.png" alt=""></div> -->
-                        </div>
-                    </div>
-                    <?php
-                        endwhile;
-                    endif;
-                    wp_reset_postdata();// reset lại đối tương wp_query
-                    ?>
-
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-            <div class="mobile-products tablet-hide desktop-hide">
-                <div class="mobile-products-wrapper">
-                    <?php
-                        if ( $query->have_posts() ) :
-                            while ($query->have_posts()) : $query->the_post();//phải dùng vòng lặp while để lấy ra đúng bài được chọn
-                            $product = wc_get_product( get_the_ID() ); /* get the WC_Product Object */
-                    ?>
-
-                    <div class="swiper">
-                        <a class="link" href="<?php the_permalink(); ?>">
-                            <div class="img">
-                                <?php
-                                    do_action('woocommerce_sale_flash');
-                                    
-                                ?>
-                                <img class="lazyload"
-                                    data-src="<?php  echo get_new_img_url(get_the_post_thumbnail_url(), 400, 400); ?>"
-                                    alt="<?php the_title(); ?>">
-                                <?php
-                                /**
-                                 * Hook: linh_addtocart.
-                                 *
-                                 * @hooked woocommerce_template_loop_add_to_cart - 5
-                                 */
-                                    do_action( 'linh_addtocart');
-                                ?>
-                            </div>
-                        </a>
-                        <div class="info-products">
-                            <a href="<?php the_permalink(); ?>">
-                                <strong><?php the_title(); ?></strong>
-                                <p><?php echo get_post_meta( $product->get_id(), 'code', true ); ?></p>
-                                <div class="price">
-                                    <?php echo $product->get_price_html(); ?>
-
-                                </div>
-                            </a>
-                            
-                            <!-- <div class="advice"><img data-src="<?php //echo JEMMIA_THEME_URL_ICON; ?>/PikPng.com_new-icon-png_2592784.png" alt=""></div> -->
-                        </div>
-                    </div>
-                    <?php
-                        endwhile;
-                    endif;
-                    wp_reset_postdata();// reset lại đối tương wp_query
-                    ?>
-
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-            <a href="<?php echo get_term_link( $category ); ?>">
-                <div class="more">Xem thêm >></div>
-            </a>
-        </div>
-        <div class="wrapper">
+    <div class="wrapper">
             <?php
             // get hotdeal
             
@@ -497,6 +354,150 @@ $upload_dir = wp_upload_dir();
                 <div class="more">Xem thêm >></div>
             </a>
         </div>
+        <div class="wrapper">
+            <?php
+            // get hotdeal
+            $terms = 'nhan-nam';
+            
+                $args = array(
+                    'post_status' => 'publish',
+                    'post_type' => 'product',
+                    
+                    // 'term_id'       => 19 ,
+                    'tax_query' => array(
+                        'relation' => 'AND',
+                        array (
+                            'taxonomy' => 'product_cat',
+                            'field' => 'slug',
+                            'terms' => $terms,
+                        ),
+                        // array (
+                        //     'taxonomy' => 'product_tag',
+                        //     'field' => 'name',
+                        //     'terms' => 'white-bg',
+                        // )
+                    ),
+                    'posts_per_page' => 4,
+                    'orderby'    => 'date',
+                    'order'      => 'DESC',
+                    'hide_empty' => false,
+                );
+                $query = new WP_Query( $args );
+            $category = get_term_by('slug', $terms, 'product_cat');
+            ?>
+            <div class="prds-banner">
+                <img class="lazyload" data-src="<?php echo JEMMIA_THEME_URL_IMG; ?>/LO2-Nhan-Nam.jpg" alt="">
+            </div>
+            <a href="<?php echo get_term_link( $category ); ?>">
+                <h2>nhẫn nam</h2>
+            </a>
+            <div class="cat-products mobile-hide">
+                <div class="swiper-wrapper">
+                    <?php
+                        if ( $query->have_posts() ) :
+                            while ($query->have_posts()) : $query->the_post();//phải dùng vòng lặp while để lấy ra đúng bài được chọn
+                            $product = wc_get_product( get_the_ID() ); /* get the WC_Product Object */
+                    ?>
+                    <div class="swiper-slide">
+                        <div class="img">
+                            <?php do_action('woocommerce_sale_flash'); ?>
+                            <a class="link" href="<?php the_permalink(); ?>">
+                                <img class="lazyload" data-src="<?php  echo get_new_img_url(get_the_post_thumbnail_url(), 400, 400); ?>" alt="<?php the_title(); ?>">
+                            </a>
+                            <?php
+                                /**
+                                 * Hook: linh_addtocart.
+                                 *
+                                 * @hooked woocommerce_template_loop_add_to_cart - 5
+                                 */
+                                do_action( 'linh_addtocart');
+                            ?>
+                        </div>
+                        <div class="info-products">
+                            <a href="<?php the_permalink(); ?>">
+                                <strong><?php the_title(); ?></strong>
+                                <p><?php echo get_post_meta( $product->get_id(), 'code', true ); ?></p>
+                                <div class="price">
+                                    <?php echo $product->get_price_html(); ?>
+                                </div>
+                            </a>
+                            <?php
+                            /**
+                             * Hook: linh_addtocart.
+                             *
+                             * @hooked woocommerce_template_loop_add_to_cart - 5
+                             */
+                            // do_action( 'linh_addtocart');
+                            ?>
+                            <!-- <div class="advice"><img data-src="<?php //echo JEMMIA_THEME_URL_ICON; ?>/PikPng.com_new-icon-png_2592784.png" alt=""></div> -->
+                        </div>
+                    </div>
+                    <?php
+                        endwhile;
+                    endif;
+                    wp_reset_postdata();// reset lại đối tương wp_query
+                    ?>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="mobile-products tablet-hide desktop-hide">
+                <div class="mobile-products-wrapper">
+                    <?php
+                        if ( $query->have_posts() ) :
+                            while ($query->have_posts()) : $query->the_post();//phải dùng vòng lặp while để lấy ra đúng bài được chọn
+                            $product = wc_get_product( get_the_ID() ); /* get the WC_Product Object */
+                    ?>
+
+                    <div class="swiper">
+                        <a class="link" href="<?php the_permalink(); ?>">
+                            <div class="img">
+                                <?php
+                                    do_action('woocommerce_sale_flash');
+                                    
+                                ?>
+                                <img class="lazyload"
+                                    data-src="<?php  echo get_new_img_url(get_the_post_thumbnail_url(), 400, 400); ?>"
+                                    alt="<?php the_title(); ?>">
+                                <?php
+                                /**
+                                 * Hook: linh_addtocart.
+                                 *
+                                 * @hooked woocommerce_template_loop_add_to_cart - 5
+                                 */
+                                    do_action( 'linh_addtocart');
+                                ?>
+                            </div>
+                        </a>
+                        <div class="info-products">
+                            <a href="<?php the_permalink(); ?>">
+                                <strong><?php the_title(); ?></strong>
+                                <p><?php echo get_post_meta( $product->get_id(), 'code', true ); ?></p>
+                                <div class="price">
+                                    <?php echo $product->get_price_html(); ?>
+
+                                </div>
+                            </a>
+                            
+                            <!-- <div class="advice"><img data-src="<?php //echo JEMMIA_THEME_URL_ICON; ?>/PikPng.com_new-icon-png_2592784.png" alt=""></div> -->
+                        </div>
+                    </div>
+                    <?php
+                        endwhile;
+                    endif;
+                    wp_reset_postdata();// reset lại đối tương wp_query
+                    ?>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <a href="<?php echo get_term_link( $category ); ?>">
+                <div class="more">Xem thêm >></div>
+            </a>
+        </div>
+
 
 
         <div class="wrapper">

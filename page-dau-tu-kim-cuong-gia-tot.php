@@ -36,9 +36,7 @@ $upload_dir = wp_upload_dir();
             <div class="gia">
                 <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/gia-report.png" alt="">
             </div>
-            <p><strong>Chốt lời hơn 100 TRIỆU</strong>, nhanh tay chốt ngay kẻo trễ Hoặc đặt cọc 30% để giữ Deal này cho riêng bạn! </p>
-
-
+            <p><strong>Thời điểm vàng chốt lời hơn 100 TRIỆU</strong>, Liên hệ <span style="color: red">Hotline: 0838 353 333</span></p>
 
             <div class="bgkc-container">
 
