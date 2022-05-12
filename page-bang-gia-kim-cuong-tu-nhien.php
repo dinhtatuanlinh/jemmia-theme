@@ -45,8 +45,8 @@ $upload_dir = wp_upload_dir();
                 <!-- <div class="bgkc-tab" id='3ly6' onclick="showbgkc('3ly6')">3 ly 6</div> -->
                 <div class="bgkc-tab" id='4ly' onclick="showbgkc('4ly')">4 ly</div>
                 <div class="bgkc-tab" id='4ly5' onclick="showbgkc('4ly5')">4 ly 5</div>
-                <div class="bgkc-tab" id='5ly' onclick="showbgkc('5ly')">5 ly</div>
-                <div class="bgkc-tab  active" id='5ly4' onclick="showbgkc('5ly4')">5 ly 4</div>
+                <div class="bgkc-tab  active" id='5ly' onclick="showbgkc('5ly')">5 ly</div>
+                <div class="bgkc-tab" id='5ly4' onclick="showbgkc('5ly4')">5 ly 4</div>
                 <div class="bgkc-tab" id='6ly' onclick="showbgkc('6ly')">6 ly</div>
                 <div class="bgkc-tab" id='6ly3' onclick="showbgkc('6ly3')">6 ly 3</div>
                 <div class="bgkc-tab" id='6ly8' onclick="showbgkc('6ly8')">6 ly 8</div>

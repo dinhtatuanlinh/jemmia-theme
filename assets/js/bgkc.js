@@ -49,6 +49,6 @@ if (bgkcUrl === 'https://jemmia.vn/bang-gia-si-kim-cuong-gia') {
 }
 if (bgkcUrl === 'https://jemmia.vn/bang-gia-kim-cuong-tu-nhien') {
 	
-    showbgkc('5ly4');
+    showbgkc('5ly');
 
 }
