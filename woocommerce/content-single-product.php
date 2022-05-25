@@ -170,6 +170,7 @@ if ( post_password_required() ) {
                     </div> -->
                     <div class="price">
                         <div class="price-detail">
+                            
                             <?php echo $product->get_price_html(); ?>
                         </div>
                         <div class="save">

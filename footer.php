@@ -11,25 +11,25 @@
                     <li><a href="https://jemmia.vn/thong-tin-ve-jemmia-diamond" target="_blank" rel="noopener noreferrer">Thông tin về Jemmia Diamond</a></li>
                     <li><a href="hhttps://jemmia.vn/thong-tin-ve-jemmia-diamond/triet-ly-san-pham-va-sang-tao" target="_blank"
                             rel="noopener noreferrer">Triết Lý Sản Phẩm và Sáng Tạo</a></li>
-                    <li><a href="https://jemmia.vn/thong-tin-ve-jemmia-diamond/cam-ket-ve-vo-trang-suc">Cam kết về vỏ trang sức</a></li>
-                    <li><a href="https://jemmia.vn/thong-tin-ve-jemmia-diamond/cam-ket-ve-kim-cuong">Cam kết về kim cương</a></li>
-                    <li><a href="https://jemmia.vn/thong-tin-ve-jemmia-diamond/cam-ket-ve-chat-luong-moissanite">Cam kết đá chủ Moissanite</a></li>
-                    <li><a href="https://jemmia.vn/tuyen-dung">Tuyển Dụng</a></li>
+                    <li><a href="https://jemmia.vn/thong-tin-ve-jemmia-diamond/cam-ket-ve-vo-trang-suc" target="_blank" rel="nofollow noopener">Cam kết về vỏ trang sức</a></li>
+                    <li><a href="https://jemmia.vn/thong-tin-ve-jemmia-diamond/cam-ket-ve-kim-cuong" target="_blank" rel="nofollow noopener">Cam kết về kim cương</a></li>
+                    <li><a href="https://jemmia.vn/thong-tin-ve-jemmia-diamond/cam-ket-ve-chat-luong-moissanite" target="_blank" rel="nofollow noopener">Cam kết đá chủ Moissanite</a></li>
+                    <li><a href="https://jemmia.vn/tuyen-dung" target="_blank" rel="nofollow noopener">Tuyển Dụng</a></li>
                 </ul>
                 <a rel="noopener noreferrer" href="//www.dmca.com/Protection/Status.aspx?ID=c86ceb42-c9b2-4c53-8a3d-591f0163598a" title="DMCA.com Protection Status" class="dmca-badge"> <img style="width: 50%;" src ="https://images.dmca.com/Badges/dmca_copyright_protected150a.png?ID=c86ceb42-c9b2-4c53-8a3d-591f0163598a"  alt="DMCA.com Protection Status" /></a>
             </div>
             <div class="col">
                 <h3>hỗ trợ mua hàng</h3>
                 <ul>
-					<li><a href="https://jemmia.vn/ho-tro-mua-hang/chinh-sach-bao-ve-thong-tin-ca-nhan-cua-nguoi-tieu-dung">Chính sách bảo vệ thông tin người dùng</a></li>
-                    <li><a href="https://jemmia.vn/ho-tro-mua-hang/chinh-sach-bang-hang-va-bao-hanh">Đổi trả, Mua lại, Bảo hành</a></li>
-                    <li><a href="https://jemmia.vn/huong-dan-mua-hang-online-jemmia.html">Hướng dẫn đặt hàng trực
+					<li><a href="https://jemmia.vn/ho-tro-mua-hang/chinh-sach-bao-ve-thong-tin-ca-nhan-cua-nguoi-tieu-dung" target="_blank" rel="nofollow noopener">Chính sách bảo vệ thông tin người dùng</a></li>
+                    <li><a href="https://jemmia.vn/ho-tro-mua-hang/chinh-sach-bang-hang-va-bao-hanh" target="_blank" rel="nofollow noopener">Đổi trả, Mua lại, Bảo hành</a></li>
+                    <li><a href="https://jemmia.vn/huong-dan-mua-hang-online-jemmia.html" target="_blank" rel="nofollow noopener">Hướng dẫn đặt hàng trực
                             tuyến</a></li>
-                    <li><a href="https://jemmia.vn/huong-dan-do-ni-nhan.html">Hướng Dẫn Đo Ni Nhẫn</a></li>
+                    <li><a href="https://jemmia.vn/huong-dan-do-ni-nhan.html" target="_blank" rel="nofollow noopener">Hướng Dẫn Đo Ni Nhẫn</a></li>
 
-                    <li><a href="https://jemmia.vn/huong-dan-bao-quan-trang-suc.html">Hướng Dẫn Bảo Quản Trang Sức</a>
+                    <li><a href="https://jemmia.vn/huong-dan-bao-quan-trang-suc.html" target="_blank" rel="nofollow noopener">Hướng Dẫn Bảo Quản Trang Sức</a>
                     </li>
-                    <li><a href="https://jemmia.vn/ho-tro-mua-hang/cau-hoi-thuong-gap">Câu Hỏi Thường Gặp</a></li>
+                    <li><a href="https://jemmia.vn/ho-tro-mua-hang/cau-hoi-thuong-gap" target="_blank" rel="nofollow noopener">Câu Hỏi Thường Gặp</a></li>
                     <p>Nhận thông tin khuyến mại hấp dẫn</p>
                 <div class="box">
                     <div class="zalo-follow-only-button" data-oaid="2838947343790196672"></div>
@@ -82,7 +82,7 @@
 </footer>
 
 <div id="up"><a href="#gotop"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></div>
-<a href="https://m.me/JEMMIA.JEWELRY">
+<a href="https://m.me/JEMMIA.JEWELRY" target="_blank" rel="nofollow noopener">
     <img id="fbMessenger" src="<?php echo JEMMIA_THEME_URL_ICON; ?>/icon-facebook.svg" alt="messenger">
 </a>
 <a href="<?php echo WC()->cart->get_cart_url(); ?>">

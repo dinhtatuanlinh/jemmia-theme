@@ -30,7 +30,7 @@
                 $except = get_the_excerpt();
         ?>
         <div class="items">
-            <a href="<?php the_permalink(); ?>">
+            <a href="<?php the_permalink(); ?>" target="_blank" rel="nofollow noopener">
                 <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                 <div class="infowrapper">
                     <div class="name"><?php the_title(); ?></div>
