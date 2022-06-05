@@ -3,13 +3,8 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <!-- <a href="https://jemmia.vn/yeu-ban-than-nang-gia-tri"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/yeu-ban-than-nang-gia-tri.jpg" alt=""></a> -->
-                <img src="https://drive.google.com/uc?id=1dyKacNgkTTlyj4z-2-Wk4FlCASSHFS8c" alt="">
+                <img src="https://drive.google.com/uc?id=1KO_4zQ3qqJ1nX4mYI7-1RCZyXH4UxnnR" alt="">
             </div>
-            <div class="swiper-slide">
-                <!-- <a href="https://jemmia.vn/yeu-ban-than-nang-gia-tri"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/yeu-ban-than-nang-gia-tri.jpg" alt=""></a> -->
-                <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/KHAI_TRUONG.jpg" alt="">
-            </div>
-
             <div class="swiper-slide">
                 <a href="https://jemmia.vn/kim-cuong-sieu-dinh"><img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/jemmiaDiamond.jpg" alt="săn kim cương"></a>
                 <!-- <img src="<?php echo JEMMIA_THEME_URL_IMG; ?>/banner/jemmiaDiamond.jpg" alt="săn kim cương"> -->
